@@ -1,0 +1,301 @@
+index,accepted,red_flags,green_flags,error
+0,yes,[],"['clear_alignment_with_issue', 'includes_test_cases', 'high_contributor_acceptance_rate', 'manageable_number_of_changed_lines', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message', 'good_code_quality']",
+1,yes,[],"['clear_alignment_with_issue', 'includes_test_cases', 'high_contributor_acceptance_rate', 'manageable_number_of_changed_lines', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message', 'good_code_quality']",
+2,yes,[],"['clear_alignment_with_issue', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message', 'manageable_number_of_changed_lines']",
+3,yes,[],"['clear_alignment_with_issue', 'includes_test_cases', 'high_contributor_acceptance_rate', 'manageable_number_of_changed_lines', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message', 'good_code_quality', 'responsive_to_feedback']",
+4,,[],[],'utf-8' codec can't encode characters in position 2749-2750: surrogates not allowed
+5,yes,[],"['clear_alignment_with_issue', 'manageable_number_of_changed_lines', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message']",
+6,yes,[],"['clear_alignment_with_issue', 'includes_test_cases', 'high_contributor_acceptance_rate', 'manageable_number_of_changed_lines', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message', 'good_code_quality']",
+7,,[],[],'utf-8' codec can't encode characters in position 3891-3892: surrogates not allowed
+8,,[],[],'utf-8' codec can't encode characters in position 3925-3926: surrogates not allowed
+9,yes,[],"['clear_alignment_with_issue', 'includes_test_cases', 'high_contributor_acceptance_rate', 'manageable_number_of_changed_lines', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message', 'good_code_quality']",
+10,yes,[],"['clear_alignment_with_issue', 'high_contributor_acceptance_rate', 'manageable_number_of_changed_lines', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message', 'responsive_to_feedback']",
+11,yes,[],"['clear_alignment_with_issue', 'includes_test_cases', 'high_contributor_acceptance_rate', 'positive_sentiment_in_comments', 'manageable_number_of_changed_lines', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message', 'good_code_quality', 'responsive_to_feedback']",
+12,yes,[],"['clear_alignment_with_issue', 'includes_test_cases', 'high_contributor_acceptance_rate', 'manageable_number_of_changed_lines', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message', 'responsive_to_feedback']",
+13,yes,[],"['clear_alignment_with_issue', 'includes_test_cases', 'high_contributor_acceptance_rate', 'manageable_number_of_changed_lines', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message', 'responsive_to_feedback']",
+14,yes,[],"['clear_alignment_with_issue', 'includes_test_cases', 'high_contributor_acceptance_rate', 'manageable_number_of_changed_lines', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message', 'good_code_quality', 'responsive_to_feedback']",
+15,yes,[],"['clear_alignment_with_issue', 'includes_test_cases', 'high_contributor_acceptance_rate', 'manageable_number_of_changed_lines', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message', 'good_code_quality', 'responsive_to_feedback']",
+16,yes,[],"['clear_alignment_with_issue', 'manageable_number_of_changed_lines', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message', 'high_contributor_acceptance_rate', 'responsive_to_feedback']",
+17,yes,[],"['clear_alignment_with_issue', 'manageable_number_of_changed_lines', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message', 'high_contributor_acceptance_rate']",
+18,,[],[],'utf-8' codec can't encode characters in position 8911-8912: surrogates not allowed
+19,yes,[],"['clear_alignment_with_issue', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message', 'manageable_number_of_changed_lines', 'high_contributor_acceptance_rate', 'good_code_quality']",
+20,yes,[],"['clear_alignment_with_issue', 'includes_test_cases', 'high_contributor_acceptance_rate', 'manageable_number_of_changed_lines', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message', 'good_code_quality', 'responsive_to_feedback']",
+21,yes,[],"['clear_alignment_with_issue', 'manageable_number_of_changed_lines', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message', 'responsive_to_feedback']",
+22,yes,[],"['clear_alignment_with_issue', 'includes_test_cases', 'high_contributor_acceptance_rate', 'positive_sentiment_in_comments', 'manageable_number_of_changed_lines', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message', 'good_code_quality', 'responsive_to_feedback']",
+23,,[],[],'utf-8' codec can't encode characters in position 5116-5117: surrogates not allowed
+24,yes,[],"['clear_alignment_with_issue', 'manageable_number_of_changed_lines', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message']",
+25,yes,[],"['clear_alignment_with_issue', 'includes_test_cases', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message', 'manageable_number_of_changed_lines', 'good_code_quality']",
+26,,[],[],'utf-8' codec can't encode characters in position 7745-7746: surrogates not allowed
+27,yes,[],"['clear_alignment_with_issue', 'includes_test_cases', 'high_contributor_acceptance_rate', 'manageable_number_of_changed_lines', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message', 'good_code_quality']",
+28,yes,[],"['clear_alignment_with_issue', 'manageable_number_of_changed_lines', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message']",
+29,yes,[],"['clear_alignment_with_issue', 'includes_test_cases', 'high_contributor_acceptance_rate', 'manageable_number_of_changed_lines', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message']",
+30,yes,[],"['clear_alignment_with_issue', 'includes_test_cases', 'high_contributor_acceptance_rate', 'manageable_number_of_changed_lines', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message']",
+31,yes,[],"['clear_alignment_with_issue', 'includes_test_cases', 'high_contributor_acceptance_rate', 'manageable_number_of_changed_lines', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message', 'responsive_to_feedback']",
+32,yes,[],"['clear_alignment_with_issue', 'manageable_number_of_changed_lines', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message']",
+33,yes,[],"['clear_alignment_with_issue', 'high_contributor_acceptance_rate', 'manageable_number_of_changed_lines', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message', 'responsive_to_feedback']",
+34,,[],[],'utf-8' codec can't encode characters in position 2849-2850: surrogates not allowed
+35,yes,[],"['clear_alignment_with_issue', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message', 'manageable_number_of_changed_lines', 'high_contributor_acceptance_rate', 'positive_sentiment_in_comments']",
+36,yes,[],"['clear_alignment_with_issue', 'includes_test_cases', 'manageable_number_of_changed_lines', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message', 'responsive_to_feedback']",
+37,no,"['solution_incorrect_or_inefficient', 'pr_not_aligned_with_issue']","['clear_pr_title', 'clear_pr_description', 'clear_commit_message', 'good_code_quality', 'includes_test_cases', 'manageable_number_of_changed_lines']",
+38,,[],[],'utf-8' codec can't encode characters in position 3580-3581: surrogates not allowed
+39,yes,[],"['clear_alignment_with_issue', 'manageable_number_of_changed_lines', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message', 'includes_test_cases', 'responsive_to_feedback']",
+40,yes,[],"['clear_alignment_with_issue', 'includes_test_cases', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message', 'good_code_quality', 'manageable_number_of_changed_lines']",
+41,yes,[],"['clear_alignment_with_issue', 'includes_test_cases', 'high_contributor_acceptance_rate', 'manageable_number_of_changed_lines', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message', 'good_code_quality']",
+42,yes,['unclear_or_missing_pr_description'],"['manageable_number_of_changed_lines', 'clear_alignment_with_issue', 'responsive_to_feedback']",
+43,yes,[],"['clear_alignment_with_issue', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message', 'high_contributor_acceptance_rate', 'manageable_number_of_changed_lines', 'good_code_quality']",
+44,yes,[],"['clear_alignment_with_issue', 'high_contributor_acceptance_rate', 'manageable_number_of_changed_lines', 'clear_pr_title', 'clear_pr_description', 'responsive_to_feedback']",
+45,yes,[],"['clear_alignment_with_issue', 'high_contributor_acceptance_rate', 'manageable_number_of_changed_lines', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message', 'good_code_quality']",
+46,yes,[],"['clear_alignment_with_issue', 'includes_test_cases', 'high_contributor_acceptance_rate', 'manageable_number_of_changed_lines', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message', 'good_code_quality']",
+47,yes,[],"['clear_alignment_with_issue', 'high_contributor_acceptance_rate', 'manageable_number_of_changed_lines', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message', 'good_code_quality']",
+48,,[],[],'utf-8' codec can't encode characters in position 2617-2618: surrogates not allowed
+49,yes,[],"['clear_alignment_with_issue', 'clear_pr_title', 'clear_pr_description', 'high_contributor_acceptance_rate', 'manageable_number_of_changed_lines', 'good_code_quality', 'responsive_to_feedback']",
+50,yes,[],"['clear_alignment_with_issue', 'includes_test_cases', 'high_contributor_acceptance_rate', 'positive_sentiment_in_comments', 'manageable_number_of_changed_lines', 'clear_pr_title', 'good_code_quality', 'responsive_to_feedback']",
+51,yes,[],"['clear_alignment_with_issue', 'manageable_number_of_changed_lines', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message', 'high_contributor_acceptance_rate', 'includes_test_cases']",
+52,yes,[],"['clear_alignment_with_issue', 'manageable_number_of_changed_lines', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message', 'high_contributor_acceptance_rate']",
+53,yes,[],"['clear_alignment_with_issue', 'includes_test_cases', 'manageable_number_of_changed_lines', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message', 'responsive_to_feedback']",
+54,yes,[],"['clear_alignment_with_issue', 'includes_test_cases', 'high_contributor_acceptance_rate', 'manageable_number_of_changed_lines', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message', 'good_code_quality', 'responsive_to_feedback']",
+55,yes,[],"['clear_alignment_with_issue', 'manageable_number_of_changed_lines', 'clear_pr_title', 'clear_commit_message', 'high_contributor_acceptance_rate']",
+56,yes,[],"['clear_alignment_with_issue', 'includes_test_cases', 'high_contributor_acceptance_rate', 'positive_sentiment_in_comments', 'manageable_number_of_changed_lines', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message', 'good_code_quality', 'responsive_to_feedback']",
+57,yes,[],"['clear_alignment_with_issue', 'includes_test_cases', 'high_contributor_acceptance_rate', 'manageable_number_of_changed_lines', 'clear_pr_title', 'responsive_to_feedback']",
+58,yes,[],"['clear_alignment_with_issue', 'manageable_number_of_changed_lines', 'clear_pr_title', 'clear_pr_description', 'high_contributor_acceptance_rate', 'clear_commit_message']",
+59,yes,[],"['clear_alignment_with_issue', 'includes_test_cases', 'high_contributor_acceptance_rate', 'manageable_number_of_changed_lines', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message', 'good_code_quality']",
+60,yes,[],"['clear_alignment_with_issue', 'includes_test_cases', 'high_contributor_acceptance_rate', 'manageable_number_of_changed_lines', 'clear_pr_title', 'good_code_quality']",
+61,,[],[],'utf-8' codec can't encode characters in position 4793-4794: surrogates not allowed
+62,yes,[],"['clear_alignment_with_issue', 'includes_test_cases', 'high_contributor_acceptance_rate', 'manageable_number_of_changed_lines', 'clear_pr_title', 'clear_commit_message', 'good_code_quality']",
+63,yes,[],"['clear_alignment_with_issue', 'includes_test_cases', 'high_contributor_acceptance_rate', 'manageable_number_of_changed_lines', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message', 'good_code_quality']",
+64,yes,[],"['clear_alignment_with_issue', 'includes_test_cases', 'high_contributor_acceptance_rate', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message', 'good_code_quality', 'responsive_to_feedback']",
+65,yes,[],"['clear_alignment_with_issue', 'high_contributor_acceptance_rate', 'manageable_number_of_changed_lines', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message', 'positive_sentiment_in_comments']",
+66,yes,[],"['clear_alignment_with_issue', 'manageable_number_of_changed_lines', 'high_contributor_acceptance_rate', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message']",
+67,yes,[],"['clear_alignment_with_issue', 'high_contributor_acceptance_rate', 'manageable_number_of_changed_lines', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message']",
+68,yes,[],"['clear_alignment_with_issue', 'includes_test_cases', 'high_contributor_acceptance_rate', 'positive_sentiment_in_comments', 'manageable_number_of_changed_lines', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message', 'good_code_quality', 'responsive_to_feedback']",
+69,yes,[],"['clear_alignment_with_issue', 'high_contributor_acceptance_rate', 'positive_sentiment_in_comments', 'manageable_number_of_changed_lines', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message']",
+70,yes,[],"['clear_alignment_with_issue', 'manageable_number_of_changed_lines', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message', 'good_code_quality', 'high_contributor_acceptance_rate']",
+71,,[],[],'utf-8' codec can't encode characters in position 5032-5033: surrogates not allowed
+72,yes,[],"['clear_alignment_with_issue', 'includes_test_cases', 'high_contributor_acceptance_rate', 'manageable_number_of_changed_lines', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message', 'good_code_quality', 'responsive_to_feedback']",
+73,yes,[],"['clear_alignment_with_issue', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message', 'manageable_number_of_changed_lines', 'high_contributor_acceptance_rate', 'responsive_to_feedback']",
+74,,[],[],'utf-8' codec can't encode characters in position 3168-3169: surrogates not allowed
+75,yes,[],"['clear_alignment_with_issue', 'high_contributor_acceptance_rate', 'manageable_number_of_changed_lines', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message']",
+76,yes,[],"['clear_alignment_with_issue', 'manageable_number_of_changed_lines', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message', 'positive_sentiment_in_comments']",
+77,yes,[],"['clear_alignment_with_issue', 'includes_test_cases', 'high_contributor_acceptance_rate', 'manageable_number_of_changed_lines', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message', 'good_code_quality']",
+78,yes,['unclear_or_missing_pr_description'],"['clear_alignment_with_issue', 'high_contributor_acceptance_rate', 'manageable_number_of_changed_lines', 'clear_pr_title', 'clear_commit_message']",
+79,yes,[],"['clear_alignment_with_issue', 'high_contributor_acceptance_rate', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message', 'responsive_to_feedback', 'manageable_number_of_changed_lines']",
+80,yes,[],"['clear_alignment_with_issue', 'manageable_number_of_changed_lines', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message', 'high_contributor_acceptance_rate', 'positive_sentiment_in_comments']",
+81,,[],[],'utf-8' codec can't encode characters in position 3178-3181: surrogates not allowed
+82,yes,['unclear_or_missing_commit_messages'],"['clear_alignment_with_issue', 'clear_pr_title', 'manageable_number_of_changed_lines', 'good_code_quality', 'high_contributor_acceptance_rate']",
+83,yes,[],"['clear_alignment_with_issue', 'includes_test_cases', 'high_contributor_acceptance_rate', 'manageable_number_of_changed_lines', 'clear_pr_title', 'clear_pr_description', 'responsive_to_feedback', 'good_code_quality']",
+84,yes,[],"['clear_alignment_with_issue', 'includes_test_cases', 'high_contributor_acceptance_rate', 'manageable_number_of_changed_lines', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message', 'good_code_quality', 'responsive_to_feedback']",
+85,,[],[],'utf-8' codec can't encode characters in position 3084-3085: surrogates not allowed
+86,yes,[],"['clear_alignment_with_issue', 'includes_test_cases', 'high_contributor_acceptance_rate', 'manageable_number_of_changed_lines', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message']",
+87,,[],[],'utf-8' codec can't encode characters in position 2315-2316: surrogates not allowed
+88,yes,[],"['clear_alignment_with_issue', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message', 'good_code_quality', 'manageable_number_of_changed_lines', 'high_contributor_acceptance_rate']",
+89,yes,[],"['clear_alignment_with_issue', 'high_contributor_acceptance_rate', 'positive_sentiment_in_comments', 'manageable_number_of_changed_lines', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message', 'responsive_to_feedback']",
+90,,[],[],'utf-8' codec can't encode characters in position 5910-5911: surrogates not allowed
+91,yes,[],"['clear_alignment_with_issue', 'includes_test_cases', 'high_contributor_acceptance_rate', 'manageable_number_of_changed_lines', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message', 'good_code_quality']",
+92,yes,[],"['clear_alignment_with_issue', 'includes_test_cases', 'high_contributor_acceptance_rate', 'positive_sentiment_in_comments', 'manageable_number_of_changed_lines', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message', 'good_code_quality', 'responsive_to_feedback']",
+93,yes,[],"['clear_alignment_with_issue', 'high_contributor_acceptance_rate', 'manageable_number_of_changed_lines', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message']",
+94,yes,[],"['clear_alignment_with_issue', 'includes_test_cases', 'high_contributor_acceptance_rate', 'positive_sentiment_in_comments', 'manageable_number_of_changed_lines', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message', 'good_code_quality', 'responsive_to_feedback']",
+95,yes,[],"['clear_alignment_with_issue', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message', 'manageable_number_of_changed_lines', 'high_contributor_acceptance_rate']",
+96,yes,[],"['clear_alignment_with_issue', 'includes_test_cases', 'high_contributor_acceptance_rate', 'manageable_number_of_changed_lines', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message', 'good_code_quality']",
+97,yes,[],"['clear_alignment_with_issue', 'clear_pr_title', 'clear_pr_description', 'manageable_number_of_changed_lines', 'high_contributor_acceptance_rate', 'good_code_quality']",
+98,yes,[],"['clear_alignment_with_issue', 'includes_test_cases', 'high_contributor_acceptance_rate', 'manageable_number_of_changed_lines', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message', 'good_code_quality']",
+99,yes,[],"['clear_alignment_with_issue', 'includes_test_cases', 'high_contributor_acceptance_rate', 'positive_sentiment_in_comments', 'manageable_number_of_changed_lines', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message', 'good_code_quality', 'responsive_to_feedback']",
+100,yes,[],"['clear_alignment_with_issue', 'high_contributor_acceptance_rate', 'positive_sentiment_in_comments', 'manageable_number_of_changed_lines', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message']",
+101,no,"['unclear_or_missing_commit_messages', 'unresponsive_after_feedback', 'solution_incorrect_or_inefficient']","['clear_alignment_with_issue', 'clear_pr_title', 'clear_pr_description', 'high_contributor_acceptance_rate']",
+102,yes,[],"['clear_alignment_with_issue', 'includes_test_cases', 'high_contributor_acceptance_rate', 'positive_sentiment_in_comments', 'manageable_number_of_changed_lines', 'clear_pr_title', 'clear_commit_message', 'responsive_to_feedback']",
+103,yes,[],"['clear_alignment_with_issue', 'includes_test_cases', 'high_contributor_acceptance_rate', 'manageable_number_of_changed_lines', 'clear_pr_title', 'good_code_quality']",
+104,yes,[],"['clear_alignment_with_issue', 'includes_test_cases', 'high_contributor_acceptance_rate', 'manageable_number_of_changed_lines', 'clear_pr_title', 'good_code_quality']",
+105,no,"['fails_tests', 'solution_incorrect_or_inefficient']","['clear_alignment_with_issue', 'clear_pr_title', 'clear_pr_description', 'high_contributor_acceptance_rate', 'manageable_number_of_changed_lines']",
+106,yes,[],"['clear_alignment_with_issue', 'manageable_number_of_changed_lines', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message']",
+107,yes,['unresponsive_after_feedback'],"['clear_alignment_with_issue', 'includes_test_cases', 'high_contributor_acceptance_rate', 'manageable_number_of_changed_lines', 'clear_pr_title', 'clear_pr_description', 'good_code_quality', 'responsive_to_feedback']",
+108,,[],[],'utf-8' codec can't encode characters in position 10828-10829: surrogates not allowed
+109,yes,[],"['clear_alignment_with_issue', 'includes_test_cases', 'high_contributor_acceptance_rate', 'manageable_number_of_changed_lines', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message', 'good_code_quality']",
+110,,[],[],'utf-8' codec can't encode characters in position 5378-5379: surrogates not allowed
+111,,[],[],'utf-8' codec can't encode characters in position 2129-2130: surrogates not allowed
+112,yes,[],"['clear_alignment_with_issue', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message', 'manageable_number_of_changed_lines', 'high_contributor_acceptance_rate', 'good_code_quality']",
+113,yes,[],"['clear_alignment_with_issue', 'clear_pr_title', 'clear_pr_description', 'manageable_number_of_changed_lines', 'high_contributor_acceptance_rate', 'responsive_to_feedback', 'good_code_quality']",
+114,no,"['breaks_compatibility', 'solution_incorrect_or_inefficient']","['clear_alignment_with_issue', 'high_contributor_acceptance_rate', 'clear_pr_title', 'clear_pr_description', 'manageable_number_of_changed_lines']",
+115,yes,[],"['clear_alignment_with_issue', 'includes_test_cases', 'high_contributor_acceptance_rate', 'manageable_number_of_changed_lines', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message', 'good_code_quality']",
+116,,[],[],'utf-8' codec can't encode characters in position 3879-3880: surrogates not allowed
+117,yes,[],"['clear_alignment_with_issue', 'includes_test_cases', 'high_contributor_acceptance_rate', 'positive_sentiment_in_comments', 'manageable_number_of_changed_lines', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message', 'responsive_to_feedback']",
+118,yes,[],"['clear_alignment_with_issue', 'includes_test_cases', 'high_contributor_acceptance_rate', 'positive_sentiment_in_comments', 'manageable_number_of_changed_lines', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message', 'good_code_quality', 'responsive_to_feedback']",
+119,,[],[],'utf-8' codec can't encode characters in position 3725-3726: surrogates not allowed
+120,,[],[],'utf-8' codec can't encode characters in position 4159-4160: surrogates not allowed
+121,yes,[],"['clear_alignment_with_issue', 'includes_test_cases', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message', 'good_code_quality', 'manageable_number_of_changed_lines', 'responsive_to_feedback']",
+122,yes,[],"['clear_alignment_with_issue', 'includes_test_cases', 'high_contributor_acceptance_rate', 'positive_sentiment_in_comments', 'manageable_number_of_changed_lines', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message', 'good_code_quality', 'responsive_to_feedback']",
+123,yes,[],"['clear_alignment_with_issue', 'includes_test_cases', 'high_contributor_acceptance_rate', 'manageable_number_of_changed_lines', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message', 'good_code_quality', 'responsive_to_feedback']",
+124,,[],[],'utf-8' codec can't encode characters in position 3829-3830: surrogates not allowed
+125,,[],[],'utf-8' codec can't encode characters in position 4238-4239: surrogates not allowed
+126,,[],[],'utf-8' codec can't encode characters in position 5536-5537: surrogates not allowed
+127,,[],[],'utf-8' codec can't encode characters in position 3593-3594: surrogates not allowed
+128,yes,[],"['clear_alignment_with_issue', 'includes_test_cases', 'high_contributor_acceptance_rate', 'positive_sentiment_in_comments', 'manageable_number_of_changed_lines', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message', 'good_code_quality', 'responsive_to_feedback']",
+129,,[],[],'utf-8' codec can't encode characters in position 5169-5170: surrogates not allowed
+130,,[],[],'utf-8' codec can't encode characters in position 3687-3688: surrogates not allowed
+131,yes,[],"['clear_alignment_with_issue', 'includes_test_cases', 'high_contributor_acceptance_rate', 'positive_sentiment_in_comments', 'manageable_number_of_changed_lines', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message', 'good_code_quality', 'responsive_to_feedback']",
+132,yes,[],"['clear_alignment_with_issue', 'includes_test_cases', 'manageable_number_of_changed_lines', 'clear_pr_title', 'clear_commit_message', 'responsive_to_feedback', 'good_code_quality']",
+133,yes,[],"['clear_alignment_with_issue', 'includes_test_cases', 'high_contributor_acceptance_rate', 'positive_sentiment_in_comments', 'manageable_number_of_changed_lines', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message', 'good_code_quality', 'responsive_to_feedback']",
+134,,[],[],'utf-8' codec can't encode characters in position 3885-3886: surrogates not allowed
+135,yes,[],"['clear_alignment_with_issue', 'includes_test_cases', 'high_contributor_acceptance_rate', 'positive_sentiment_in_comments', 'manageable_number_of_changed_lines', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message', 'good_code_quality', 'responsive_to_feedback']",
+136,yes,[],"['clear_alignment_with_issue', 'includes_test_cases', 'high_contributor_acceptance_rate', 'manageable_number_of_changed_lines', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message', 'good_code_quality']",
+137,,[],[],'utf-8' codec can't encode characters in position 6080-6081: surrogates not allowed
+138,,[],[],'utf-8' codec can't encode characters in position 3857-3858: surrogates not allowed
+139,,[],[],'utf-8' codec can't encode characters in position 3721-3722: surrogates not allowed
+140,yes,[],"['clear_alignment_with_issue', 'includes_test_cases', 'high_contributor_acceptance_rate', 'positive_sentiment_in_comments', 'manageable_number_of_changed_lines', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message', 'good_code_quality', 'responsive_to_feedback']",
+141,yes,[],"['clear_alignment_with_issue', 'includes_test_cases', 'manageable_number_of_changed_lines', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message', 'good_code_quality', 'responsive_to_feedback']",
+142,,[],[],'utf-8' codec can't encode characters in position 3825-3826: surrogates not allowed
+143,,[],[],'utf-8' codec can't encode characters in position 3613-3616: surrogates not allowed
+144,yes,[],"['clear_alignment_with_issue', 'includes_test_cases', 'high_contributor_acceptance_rate', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message', 'good_code_quality', 'responsive_to_feedback', 'manageable_number_of_changed_lines']",
+145,,[],[],'utf-8' codec can't encode characters in position 3800-3801: surrogates not allowed
+146,,[],[],'utf-8' codec can't encode characters in position 6698-6699: surrogates not allowed
+147,,[],[],'utf-8' codec can't encode characters in position 3828-3829: surrogates not allowed
+148,yes,[],"['clear_alignment_with_issue', 'includes_test_cases', 'high_contributor_acceptance_rate', 'manageable_number_of_changed_lines', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message', 'good_code_quality']",
+149,yes,[],"['clear_alignment_with_issue', 'includes_test_cases', 'high_contributor_acceptance_rate', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message', 'manageable_number_of_changed_lines', 'good_code_quality', 'responsive_to_feedback']",
+150,,[],[],'utf-8' codec can't encode characters in position 5193-5194: surrogates not allowed
+151,,[],[],'utf-8' codec can't encode characters in position 4112-4113: surrogates not allowed
+152,,[],[],'utf-8' codec can't encode characters in position 3696-3697: surrogates not allowed
+153,yes,['unresponsive_after_feedback'],"['clear_alignment_with_issue', 'includes_test_cases', 'high_contributor_acceptance_rate', 'manageable_number_of_changed_lines', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message']",
+154,,[],[],'utf-8' codec can't encode characters in position 4502-4503: surrogates not allowed
+155,,[],[],'utf-8' codec can't encode characters in position 2776-2777: surrogates not allowed
+156,yes,[],"['clear_alignment_with_issue', 'manageable_number_of_changed_lines', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message', 'high_contributor_acceptance_rate']",
+157,yes,[],"['clear_alignment_with_issue', 'manageable_number_of_changed_lines', 'clear_commit_message', 'good_code_quality']",
+158,,[],[],'utf-8' codec can't encode characters in position 10572-10573: surrogates not allowed
+159,yes,[],"['clear_alignment_with_issue', 'includes_test_cases', 'high_contributor_acceptance_rate', 'manageable_number_of_changed_lines', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message', 'good_code_quality']",
+160,no,"['pr_not_aligned_with_issue', 'unresponsive_after_feedback']","['clear_pr_title', 'clear_pr_description', 'manageable_number_of_changed_lines', 'includes_test_cases']",
+161,,[],[],'utf-8' codec can't encode characters in position 6387-6388: surrogates not allowed
+162,no,"['missing_or_inadequate_test_cases', 'pr_not_aligned_with_issue', 'unresponsive_after_feedback']","['clear_commit_message', 'manageable_number_of_changed_lines', 'clear_pr_title', 'clear_pr_description']",
+163,yes,[],"['clear_alignment_with_issue', 'includes_test_cases', 'high_contributor_acceptance_rate', 'manageable_number_of_changed_lines', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message', 'good_code_quality', 'responsive_to_feedback']",
+164,,[],[],'utf-8' codec can't encode characters in position 4663-4664: surrogates not allowed
+165,no,"['fails_tests', 'missing_or_inadequate_test_cases', 'solution_incorrect_or_inefficient']","['clear_alignment_with_issue', 'high_contributor_acceptance_rate', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message', 'manageable_number_of_changed_lines']",
+166,yes,[],"['clear_alignment_with_issue', 'includes_test_cases', 'high_contributor_acceptance_rate', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message', 'responsive_to_feedback', 'manageable_number_of_changed_lines']",
+167,yes,['breaks_compatibility'],"['clear_alignment_with_issue', 'includes_test_cases', 'high_contributor_acceptance_rate', 'manageable_number_of_changed_lines', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message']",
+168,,[],[],'utf-8' codec can't encode characters in position 3108-3111: surrogates not allowed
+169,yes,[],"['clear_alignment_with_issue', 'includes_test_cases', 'high_contributor_acceptance_rate', 'manageable_number_of_changed_lines', 'clear_pr_title', 'good_code_quality', 'responsive_to_feedback']",
+170,,[],[],'utf-8' codec can't encode characters in position 48282-48285: surrogates not allowed
+171,,[],[],'utf-8' codec can't encode characters in position 8189-8192: surrogates not allowed
+172,yes,[],"['clear_alignment_with_issue', 'manageable_number_of_changed_lines', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message', 'responsive_to_feedback']",
+173,yes,[],"['clear_alignment_with_issue', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message', 'high_contributor_acceptance_rate', 'manageable_number_of_changed_lines', 'responsive_to_feedback']",
+174,yes,[],"['clear_alignment_with_issue', 'includes_test_cases', 'high_contributor_acceptance_rate', 'responsive_to_feedback', 'manageable_number_of_changed_lines', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message']",
+175,yes,[],"['clear_alignment_with_issue', 'includes_test_cases', 'high_contributor_acceptance_rate', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message', 'good_code_quality', 'responsive_to_feedback', 'manageable_number_of_changed_lines']",
+176,yes,[],"['clear_alignment_with_issue', 'manageable_number_of_changed_lines', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message', 'high_contributor_acceptance_rate', 'positive_sentiment_in_comments']",
+177,yes,[],"['clear_alignment_with_issue', 'includes_test_cases', 'high_contributor_acceptance_rate', 'manageable_number_of_changed_lines', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message']",
+178,,[],[],'utf-8' codec can't encode characters in position 3137-3138: surrogates not allowed
+179,yes,[],"['clear_alignment_with_issue', 'high_contributor_acceptance_rate', 'manageable_number_of_changed_lines', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message']",
+180,,[],[],'utf-8' codec can't encode characters in position 2440-2443: surrogates not allowed
+181,yes,[],"['clear_alignment_with_issue', 'includes_test_cases', 'high_contributor_acceptance_rate', 'manageable_number_of_changed_lines', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message', 'responsive_to_feedback']",
+182,yes,[],"['clear_alignment_with_issue', 'includes_test_cases', 'manageable_number_of_changed_lines', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message']",
+183,yes,[],"['clear_alignment_with_issue', 'high_contributor_acceptance_rate', 'clear_pr_title', 'manageable_number_of_changed_lines']",
+184,yes,[],"['clear_alignment_with_issue', 'manageable_number_of_changed_lines', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message', 'high_contributor_acceptance_rate']",
+185,,[],[],'utf-8' codec can't encode characters in position 4401-4402: surrogates not allowed
+186,yes,[],"['clear_alignment_with_issue', 'includes_test_cases', 'high_contributor_acceptance_rate', 'manageable_number_of_changed_lines', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message']",
+187,,[],[],'utf-8' codec can't encode characters in position 2643-2644: surrogates not allowed
+188,yes,[],"['clear_alignment_with_issue', 'includes_test_cases', 'high_contributor_acceptance_rate', 'manageable_number_of_changed_lines', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message']",
+189,yes,[],"['clear_alignment_with_issue', 'includes_test_cases', 'high_contributor_acceptance_rate', 'positive_sentiment_in_comments', 'manageable_number_of_changed_lines', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message', 'good_code_quality', 'responsive_to_feedback']",
+190,yes,[],"['clear_alignment_with_issue', 'includes_test_cases', 'high_contributor_acceptance_rate', 'manageable_number_of_changed_lines', 'clear_pr_title', 'good_code_quality']",
+191,yes,[],"['clear_alignment_with_issue', 'high_contributor_acceptance_rate', 'manageable_number_of_changed_lines', 'clear_pr_title', 'clear_pr_description', 'responsive_to_feedback']",
+192,yes,[],"['clear_alignment_with_issue', 'includes_test_cases', 'high_contributor_acceptance_rate', 'manageable_number_of_changed_lines', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message']",
+193,,[],[],'utf-8' codec can't encode characters in position 15335-15336: surrogates not allowed
+194,yes,[],"['clear_alignment_with_issue', 'includes_test_cases', 'high_contributor_acceptance_rate', 'manageable_number_of_changed_lines', 'clear_pr_title', 'clear_commit_message', 'responsive_to_feedback']",
+195,yes,[],"['clear_alignment_with_issue', 'includes_test_cases', 'high_contributor_acceptance_rate', 'manageable_number_of_changed_lines', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message', 'good_code_quality']",
+196,,[],[],'utf-8' codec can't encode characters in position 45887-45888: surrogates not allowed
+197,yes,[],"['clear_alignment_with_issue', 'manageable_number_of_changed_lines', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message', 'high_contributor_acceptance_rate']",
+198,yes,[],"['clear_alignment_with_issue', 'manageable_number_of_changed_lines', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message', 'good_code_quality']",
+199,yes,['unclear_commit_messages'],"['clear_alignment_with_issue', 'manageable_number_of_changed_lines', 'clear_pr_title', 'clear_pr_description', 'responsive_to_feedback']",
+200,yes,"['unclear_or_missing_commit_messages', 'unclear_or_missing_pr_description']","['clear_alignment_with_issue', 'manageable_number_of_changed_lines', 'high_contributor_acceptance_rate']",
+201,yes,['low_contributor_acceptance_rate'],"['clear_alignment_with_issue', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message', 'manageable_number_of_changed_lines']",
+202,yes,[],"['clear_alignment_with_issue', 'manageable_number_of_changed_lines', 'high_contributor_acceptance_rate', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message']",
+203,,[],[],'utf-8' codec can't encode characters in position 4966-4967: surrogates not allowed
+204,no,"['unresponsive_after_feedback', 'solution_incorrect_or_inefficient']","['clear_pr_title', 'clear_alignment_with_issue', 'manageable_number_of_changed_lines']",
+205,no,"['pr_not_aligned_with_issue', 'solution_incorrect_or_inefficient']","['clear_pr_title', 'manageable_number_of_changed_lines', 'high_contributor_acceptance_rate', 'positive_sentiment_in_comments']",
+206,yes,[],"['clear_alignment_with_issue', 'includes_test_cases', 'high_contributor_acceptance_rate', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message', 'good_code_quality', 'responsive_to_feedback', 'manageable_number_of_changed_lines']",
+207,yes,[],"['clear_alignment_with_issue', 'includes_test_cases', 'high_contributor_acceptance_rate', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message', 'manageable_number_of_changed_lines', 'good_code_quality']",
+208,yes,[],"['clear_alignment_with_issue', 'manageable_number_of_changed_lines', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message', 'high_contributor_acceptance_rate']",
+209,,[],[],'utf-8' codec can't encode characters in position 4388-4389: surrogates not allowed
+210,no,"['low_contributor_acceptance_rate', 'pr_not_aligned_with_issue']","['clear_pr_title', 'clear_pr_description', 'manageable_number_of_changed_lines', 'includes_test_cases']",
+211,yes,['low_contributor_acceptance_rate'],"['clear_alignment_with_issue', 'manageable_number_of_changed_lines', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message']",
+212,yes,[],"['clear_alignment_with_issue', 'manageable_number_of_changed_lines', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message', 'high_contributor_acceptance_rate']",
+213,yes,[],"['clear_alignment_with_issue', 'includes_test_cases', 'high_contributor_acceptance_rate', 'manageable_number_of_changed_lines', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message', 'responsive_to_feedback']",
+214,no,"['low_contributor_acceptance_rate', 'unclear_or_missing_pr_description']","['clear_alignment_with_issue', 'manageable_number_of_changed_lines', 'clear_pr_title', 'clear_commit_message']",
+215,yes,[],"['clear_alignment_with_issue', 'manageable_number_of_changed_lines', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message', 'positive_sentiment_in_comments']",
+216,no,"['low_contributor_acceptance_rate', 'negative_sentiment_in_comments', 'breaks_compatibility']","['clear_alignment_with_issue', 'includes_test_cases', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message', 'manageable_number_of_changed_lines']",
+217,yes,[],"['clear_alignment_with_issue', 'includes_test_cases', 'high_contributor_acceptance_rate', 'manageable_number_of_changed_lines', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message']",
+218,no,"['low_contributor_acceptance_rate', 'unclear_commit_messages', 'negative_sentiment_in_comments', 'poor_code_quality']","['clear_alignment_with_issue', 'manageable_number_of_changed_lines', 'clear_pr_title']",
+219,yes,[],"['clear_alignment_with_issue', 'includes_test_cases', 'high_contributor_acceptance_rate', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message', 'good_code_quality', 'manageable_number_of_changed_lines']",
+220,yes,[],"['clear_alignment_with_issue', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message', 'high_contributor_acceptance_rate', 'good_code_quality', 'manageable_number_of_changed_lines']",
+221,yes,[],"['clear_alignment_with_issue', 'includes_test_cases', 'high_contributor_acceptance_rate', 'manageable_number_of_changed_lines', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message', 'good_code_quality']",
+222,,[],[],'utf-8' codec can't encode characters in position 9259-9260: surrogates not allowed
+223,yes,['low_contributor_acceptance_rate'],"['clear_alignment_with_issue', 'includes_test_cases', 'manageable_number_of_changed_lines', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message']",
+224,yes,[],"['clear_alignment_with_issue', 'includes_test_cases', 'high_contributor_acceptance_rate', 'manageable_number_of_changed_lines', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message', 'good_code_quality', 'responsive_to_feedback']",
+225,yes,[],"['clear_alignment_with_issue', 'includes_test_cases', 'manageable_number_of_changed_lines', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message', 'responsive_to_feedback']",
+226,yes,[],"['clear_alignment_with_issue', 'includes_test_cases', 'high_contributor_acceptance_rate', 'positive_sentiment_in_comments', 'manageable_number_of_changed_lines', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message', 'good_code_quality', 'responsive_to_feedback']",
+227,yes,[],"['clear_alignment_with_issue', 'includes_test_cases', 'high_contributor_acceptance_rate', 'manageable_number_of_changed_lines', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message', 'responsive_to_feedback']",
+228,yes,[],"['clear_alignment_with_issue', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message', 'manageable_number_of_changed_lines', 'high_contributor_acceptance_rate', 'positive_sentiment_in_comments', 'good_code_quality']",
+229,yes,[],"['clear_alignment_with_issue', 'manageable_number_of_changed_lines', 'includes_test_cases', 'high_contributor_acceptance_rate', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message', 'good_code_quality']",
+230,yes,[],"['clear_alignment_with_issue', 'includes_test_cases', 'high_contributor_acceptance_rate', 'clear_pr_title', 'clear_commit_message', 'good_code_quality', 'manageable_number_of_changed_lines', 'clear_pr_description']",
+231,,[],[],'utf-8' codec can't encode characters in position 9442-9443: surrogates not allowed
+232,yes,[],"['clear_alignment_with_issue', 'manageable_number_of_changed_lines', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message', 'good_code_quality', 'high_contributor_acceptance_rate', 'clear_alignment_with_issue']",
+233,yes,[],"['clear_alignment_with_issue', 'includes_test_cases', 'high_contributor_acceptance_rate', 'manageable_number_of_changed_lines', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message', 'good_code_quality']",
+234,yes,[],"['clear_alignment_with_issue', 'manageable_number_of_changed_lines', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message', 'responsive_to_feedback']",
+235,yes,[],"['clear_alignment_with_issue', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message', 'high_contributor_acceptance_rate', 'manageable_number_of_changed_lines', 'responsive_to_feedback']",
+236,,[],[],'utf-8' codec can't encode characters in position 4216-4217: surrogates not allowed
+237,yes,[],"['clear_alignment_with_issue', 'includes_test_cases', 'high_contributor_acceptance_rate', 'manageable_number_of_changed_lines', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message', 'good_code_quality']",
+238,yes,[],"['clear_alignment_with_issue', 'manageable_number_of_changed_lines', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message', 'high_contributor_acceptance_rate']",
+239,,[],[],'utf-8' codec can't encode characters in position 2172-2175: surrogates not allowed
+240,yes,['missing_or_inadequate_test_cases'],"['clear_alignment_with_issue', 'high_contributor_acceptance_rate', 'manageable_number_of_changed_lines', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message', 'good_code_quality', 'responsive_to_feedback']",
+241,yes,[],"['clear_alignment_with_issue', 'manageable_number_of_changed_lines', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message', 'high_contributor_acceptance_rate']",
+242,yes,[],"['clear_alignment_with_issue', 'high_contributor_acceptance_rate', 'manageable_number_of_changed_lines', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message', 'good_code_quality', 'responsive_to_feedback']",
+243,yes,[],"['clear_alignment_with_issue', 'manageable_number_of_changed_lines', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message', 'high_contributor_acceptance_rate']",
+244,yes,[],"['clear_alignment_with_issue', 'includes_test_cases', 'high_contributor_acceptance_rate', 'manageable_number_of_changed_lines', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message', 'good_code_quality', 'responsive_to_feedback']",
+245,yes,['low_contributor_acceptance_rate'],"['clear_alignment_with_issue', 'manageable_number_of_changed_lines', 'clear_pr_title', 'clear_commit_message']",
+246,yes,[],"['clear_alignment_with_issue', 'includes_test_cases', 'high_contributor_acceptance_rate', 'manageable_number_of_changed_lines', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message', 'good_code_quality']",
+247,yes,[],"['clear_alignment_with_issue', 'includes_test_cases', 'high_contributor_acceptance_rate', 'manageable_number_of_changed_lines', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message', 'responsive_to_feedback']",
+248,yes,[],"['clear_alignment_with_issue', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message', 'manageable_number_of_changed_lines', 'good_code_quality', 'responsive_to_feedback']",
+249,yes,[],"['clear_alignment_with_issue', 'includes_test_cases', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message', 'good_code_quality', 'manageable_number_of_changed_lines']",
+250,yes,[],"['clear_alignment_with_issue', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message', 'manageable_number_of_changed_lines', 'high_contributor_acceptance_rate', 'responsive_to_feedback']",
+251,no,['unresponsive_after_feedback'],"['clear_alignment_with_issue', 'includes_test_cases', 'high_contributor_acceptance_rate', 'manageable_number_of_changed_lines', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message']",
+252,yes,[],"['clear_alignment_with_issue', 'includes_test_cases', 'high_contributor_acceptance_rate', 'manageable_number_of_changed_lines', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message', 'responsive_to_feedback']",
+253,yes,[],"['clear_alignment_with_issue', 'includes_test_cases', 'high_contributor_acceptance_rate', 'manageable_number_of_changed_lines', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message', 'good_code_quality', 'responsive_to_feedback']",
+254,no,['pr_not_aligned_with_issue'],"['clear_pr_title', 'clear_pr_description', 'manageable_number_of_changed_lines', 'includes_test_cases', 'clear_alignment_with_issue']",
+255,yes,[],"['clear_alignment_with_issue', 'includes_test_cases', 'high_contributor_acceptance_rate', 'manageable_number_of_changed_lines', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message', 'good_code_quality']",
+256,no,['pr_not_aligned_with_issue'],"['includes_test_cases', 'clear_pr_title', 'clear_pr_description', 'high_contributor_acceptance_rate', 'responsive_to_feedback', 'good_code_quality', 'manageable_number_of_changed_lines']",
+257,yes,['low_contributor_acceptance_rate'],"['clear_alignment_with_issue', 'manageable_number_of_changed_lines', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message']",
+258,no,"['missing_or_inadequate_test_cases', 'poor_code_quality']","['clear_alignment_with_issue', 'clear_pr_title', 'high_contributor_acceptance_rate', 'manageable_number_of_changed_lines']",
+259,yes,['unclear_or_missing_commit_messages'],"['clear_alignment_with_issue', 'manageable_number_of_changed_lines', 'clear_pr_title', 'clear_pr_description', 'responsive_to_feedback']",
+260,yes,[],"['clear_alignment_with_issue', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message', 'manageable_number_of_changed_lines', 'responsive_to_feedback']",
+261,no,"['pr_not_aligned_with_issue', 'unclear_or_missing_pr_description', 'solution_incorrect_or_inefficient', 'unresponsive_after_feedback']",['manageable_number_of_changed_lines'],
+262,no,"['pr_not_aligned_with_issue', 'missing_or_inadequate_test_cases', 'low_contributor_acceptance_rate']","['manageable_number_of_changed_lines', 'clear_pr_title', 'clear_commit_message']",
+263,yes,[],"['clear_alignment_with_issue', 'includes_test_cases', 'manageable_number_of_changed_lines', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message']",
+264,yes,[],"['clear_alignment_with_issue', 'includes_test_cases', 'high_contributor_acceptance_rate', 'manageable_number_of_changed_lines', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message']",
+265,yes,[],"['clear_alignment_with_issue', 'includes_test_cases', 'high_contributor_acceptance_rate', 'manageable_number_of_changed_lines', 'clear_pr_title', 'clear_pr_description', 'responsive_to_feedback']",
+266,yes,[],"['clear_alignment_with_issue', 'includes_test_cases', 'high_contributor_acceptance_rate', 'manageable_number_of_changed_lines', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message', 'responsive_to_feedback']",
+267,no,"['unresponsive_after_feedback', 'unclear_or_missing_commit_messages', 'low_contributor_acceptance_rate', 'negative_sentiment_in_comments', 'poor_code_quality']","['clear_alignment_with_issue', 'clear_pr_title', 'clear_pr_description']",
+268,no,"['pr_not_aligned_with_issue', 'unclear_or_missing_pr_description']","['high_contributor_acceptance_rate', 'manageable_number_of_changed_lines', 'clear_pr_title', 'clear_commit_message']",
+269,yes,[],"['clear_alignment_with_issue', 'manageable_number_of_changed_lines', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message', 'responsive_to_feedback']",
+270,no,"['pr_not_aligned_with_issue', 'solution_incorrect_or_inefficient']","['includes_test_cases', 'high_contributor_acceptance_rate', 'manageable_number_of_changed_lines', 'clear_pr_title', 'clear_commit_message']",
+271,yes,['unresponsive_after_feedback'],"['clear_alignment_with_issue', 'includes_test_cases', 'high_contributor_acceptance_rate', 'manageable_number_of_changed_lines', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message']",
+272,,[],[],'utf-8' codec can't encode characters in position 1993-1994: surrogates not allowed
+273,,[],[],'utf-8' codec can't encode characters in position 1915-1916: surrogates not allowed
+274,,[],[],'utf-8' codec can't encode characters in position 1931-1932: surrogates not allowed
+275,yes,[],"['clear_alignment_with_issue', 'includes_test_cases', 'manageable_number_of_changed_lines', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message', 'good_code_quality']",
+276,yes,[],"['clear_alignment_with_issue', 'manageable_number_of_changed_lines', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message', 'good_code_quality', 'responsive_to_feedback', 'high_contributor_acceptance_rate', 'positive_sentiment_in_comments']",
+277,yes,[],"['clear_alignment_with_issue', 'manageable_number_of_changed_lines', 'high_contributor_acceptance_rate', 'clear_commit_message', 'clear_pr_title']",
+278,,[],[],'utf-8' codec can't encode characters in position 1918-1919: surrogates not allowed
+279,,[],[],'utf-8' codec can't encode characters in position 2023-2024: surrogates not allowed
+280,yes,[],"['clear_alignment_with_issue', 'includes_test_cases', 'high_contributor_acceptance_rate', 'manageable_number_of_changed_lines', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message', 'good_code_quality', 'responsive_to_feedback']",
+281,,[],[],'utf-8' codec can't encode characters in position 2337-2338: surrogates not allowed
+282,yes,[],"['clear_alignment_with_issue', 'includes_test_cases', 'high_contributor_acceptance_rate', 'manageable_number_of_changed_lines', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message', 'responsive_to_feedback']",
+283,yes,[],"['clear_alignment_with_issue', 'includes_test_cases', 'high_contributor_acceptance_rate', 'manageable_number_of_changed_lines', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message', 'good_code_quality']",
+284,yes,[],"['clear_alignment_with_issue', 'manageable_number_of_changed_lines', 'high_contributor_acceptance_rate', 'clear_pr_title', 'includes_test_cases']",
+285,,[],[],'utf-8' codec can't encode characters in position 1777-1778: surrogates not allowed
+286,,[],[],'utf-8' codec can't encode characters in position 3461-3462: surrogates not allowed
+287,yes,[],"['clear_alignment_with_issue', 'manageable_number_of_changed_lines', 'high_contributor_acceptance_rate', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message']",
+288,,[],[],'utf-8' codec can't encode characters in position 2331-2332: surrogates not allowed
+289,,[],[],'utf-8' codec can't encode characters in position 3314-3315: surrogates not allowed
+290,yes,[],"['clear_alignment_with_issue', 'includes_test_cases', 'high_contributor_acceptance_rate', 'manageable_number_of_changed_lines', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message']",
+291,yes,[],"['clear_alignment_with_issue', 'high_contributor_acceptance_rate', 'manageable_number_of_changed_lines', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message']",
+292,yes,[],"['clear_alignment_with_issue', 'includes_test_cases', 'manageable_number_of_changed_lines', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message', 'good_code_quality']",
+293,yes,[],"['clear_alignment_with_issue', 'manageable_number_of_changed_lines', 'responsive_to_feedback', 'clear_pr_title', 'clear_pr_description', 'high_contributor_acceptance_rate']",
+294,,[],[],'utf-8' codec can't encode characters in position 3379-3380: surrogates not allowed
+295,yes,[],"['high_contributor_acceptance_rate', 'clear_alignment_with_issue', 'manageable_number_of_changed_lines', 'responsive_to_feedback']",
+296,yes,[],"['clear_alignment_with_issue', 'includes_test_cases', 'high_contributor_acceptance_rate', 'manageable_number_of_changed_lines', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message', 'good_code_quality']",
+297,yes,[],"['clear_alignment_with_issue', 'clear_pr_title', 'clear_pr_description', 'manageable_number_of_changed_lines', 'good_code_quality', 'high_contributor_acceptance_rate']",
+298,no,['unclear_or_missing_pr_title'],"['clear_alignment_with_issue', 'includes_test_cases', 'manageable_number_of_changed_lines', 'responsive_to_feedback']",
+299,yes,[],"['clear_alignment_with_issue', 'includes_test_cases', 'high_contributor_acceptance_rate', 'manageable_number_of_changed_lines', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message']",

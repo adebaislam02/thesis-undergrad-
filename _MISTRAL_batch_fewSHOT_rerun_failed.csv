@@ -1,0 +1,4 @@
+index,accepted,red_flags,green_flags,error
+84,yes,['Missing or inadequate test cases'],"['Clear alignment with issue', 'High contributor acceptance rate', 'Positive sentiment in comments', 'Manageable number of changed lines', 'Clear PR title', 'Clear PR description', 'Clear commit message', 'Responsive to feedback']",
+175,yes,[],"['Clear alignment with issue', 'Includes test cases', 'High contributor acceptance rate', 'Positive sentiment in comments', 'Manageable number of changed lines', 'Clear PR title', 'Clear PR description', 'Clear commit message', 'Good code quality', 'Responsive to feedback']",
+246,yes,['Unclear or missing commit messages'],"['Clear alignment with issue', 'Includes test cases', 'High contributor acceptance rate', 'Manageable number of changed lines', 'Clear PR title', 'Clear PR description']",

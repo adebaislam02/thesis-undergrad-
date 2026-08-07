@@ -1,0 +1,8 @@
+index,accepted,red_flags,green_flags,error
+150,yes,[],"['Clear alignment with issue', 'Includes test cases', 'High contributor acceptance rate', 'Positive sentiment in comments', 'Manageable number of changed lines', 'Clear PR title', 'Clear PR description', 'Clear commit message', 'Responsive to feedback', 'Good code quality']",
+151,yes,[],"['Clear alignment with issue', 'Includes test cases', 'High contributor acceptance rate', 'Manageable number of changed lines', 'Clear PR title', 'Clear PR description', 'Responsive to feedback', 'Good code quality']",
+152,no,"['negative_sentiment_in_comments', 'solution_incorrect_or_inefficient']","['clear_pr_title', 'clear_pr_description', 'clear_alignment_with_issue', 'high_contributor_acceptance_rate', 'manageable_number_of_changed_lines', 'clear_commit_message', 'responsive_to_feedback']",
+154,no,['Solution_incorrect_or_inefficient'],"['Clear alignment with issue', 'Includes test cases', 'High contributor acceptance rate', 'Manageable number of changed lines', 'Clear PR title', 'Clear PR description', 'Clear commit message']",
+155,no,['Solution is incorrect or inefficient'],"['Clear alignment with issue', 'Clear PR description', 'Clear commit message']",
+158,no,"['Overengineered_solution', 'Large number of changed lines']","['Clear alignment with issue', 'Includes test cases', 'High contributor acceptance rate', 'Clear PR description', 'Clear commit message']",
+161,yes,[],"['Clear alignment with issue', 'Includes test cases', 'High contributor acceptance rate', 'Positive sentiment in comments', 'Manageable number of changed lines', 'Clear PR title', 'Clear PR description', 'Clear commit message', 'Responsive to feedback', 'Good code quality']",

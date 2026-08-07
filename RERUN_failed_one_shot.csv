@@ -1,0 +1,3 @@
+index,accepted,red_flags,green_flags,error
+113,yes,"['missing_or_inadequate_test_cases', 'poor_code_quality', 'unclear_or_missing_commit_messages']","['clear_alignment_with_issue', 'high_contributor_acceptance_rate', 'manageable_number_of_changed_lines', 'positive_sentiment_in_comments', 'responsive_to_feedback', 'clear_pr_title', 'clear_pr_description']",
+258,yes,"['missing_or_inadequate_test_cases', 'unclear_or_missing_pr_description', 'unresponsive_after_feedback', 'breaks_compatibility', 'poor_code_quality']","['clear_alignment_with_issue', 'high_contributor_acceptance_rate', 'manageable_number_of_changed_lines', 'clear_pr_title', 'clear_commit_message']",

@@ -1,0 +1,3 @@
+index,accepted,red_flags,green_flags
+251,no,"['unclear_or_missing_pr_title', 'unclear_or_missing_pr_description']","['clear_alignment_with_issue', 'high_contributor_acceptance_rate', 'manageable_number_of_changed_lines']"
+142,yes,[],"['clear_alignment_with_issue', 'includes_test_cases', 'high_contributor_acceptance_rate', 'manageable_number_of_changed_lines', 'clear_pr_title', 'clear_pr_description', 'clear_commit_message', 'good_code_quality']"

@@ -1,0 +1,2 @@
+index,accepted,red_flags,green_flags,error
+218,no,"['low_contributor_acceptance_rate', 'pr_not_aligned_with_issue', 'negative_sentiment_in_comments']","['clear_pr_title', 'clear_commit_message', 'manageable_number_of_changed_lines']",

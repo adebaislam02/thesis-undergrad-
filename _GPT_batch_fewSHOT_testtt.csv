@@ -1,0 +1,7 @@
+index,accepted,red_flags,green_flags,error
+0,yes,[],"['Clear alignment with issue', 'High contributor acceptance rate', 'Manageable number of changed lines', 'Clear PR title', 'Clear PR description']",
+1,yes,[],"['Clear alignment with issue', 'Includes test cases', 'High contributor acceptance rate', 'Positive sentiment in comments', 'Manageable number of changed lines', 'Clear PR title', 'Clear PR description', 'Clear commit message']",
+2,yes,[],"['Clear alignment with issue', 'Clear PR title', 'Clear PR description', 'Includes test cases', 'High contributor acceptance rate', 'Manageable number of changed lines', 'Positive sentiment in comments']",
+3,yes,[],"['Clear alignment with issue', 'Includes test cases', 'High contributor acceptance rate', 'Positive sentiment in comments', 'Manageable number of changed lines', 'Clear PR title', 'Clear PR description', 'Clear commit message', 'Responsive to feedback']",
+4,,[],[],API Call failed
+5,yes,[],"['Clear alignment with issue', 'Manageable number of changed lines', 'High contributor acceptance rate', 'Clear PR title', 'Clear PR description']",
