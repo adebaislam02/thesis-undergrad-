@@ -2,3 +2,4 @@ openai
 tqdm
 requests
 pandas
+scikit-learn

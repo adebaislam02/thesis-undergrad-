@@ -1,0 +1,232 @@
+% ==================================================================
+% Section 5 --- Results  (updated after DeepSeek zero-shot CSV recovery)
+% Copy-paste this entire block into eisej_paper.tex, replacing the
+% current Section 5.  All formatting is proper LaTeX (no markdown).
+% All numbers are from the eval driver's final CSVs.
+% ==================================================================
+
+\section{Results}\label{sec:Results}
+
+This section reports the evaluation of the four models across the
+three research questions defined in Section~\ref{sec:Introduction}.
+Section~\ref{sec:results-rq1} addresses RQ1 (acceptance
+classification), Section~\ref{sec:results-rq2} addresses RQ2 (overall
+flag-generation performance), and Section~\ref{sec:results-rq3}
+addresses RQ3 (extractive versus evaluative flag categories).
+Section~\ref{sec:results-drift} presents a supplementary finding on
+vocabulary drift under few-shot prompting.
+
+\subsection{RQ1: Acceptance Classification}\label{sec:results-rq1}
+
+Table~\ref{tab:acceptance} reports acceptance-classification
+performance across all four models and prompting conditions, together
+with a majority-class baseline that always predicts \emph{merged} ---
+the majority label in the dataset (206 merged, 94 unmerged; 68.7\%
+accuracy floor).  Reporting this baseline separates genuine predictive
+capability from the effect of class imbalance.
+
+% >>> PASTE TABLE 5.1 HERE  (table_5_1_acceptance.tex) <<<
+
+All four models exceed the majority baseline on overall accuracy,
+though by markedly different margins.  \textbf{Claude Haiku 4.5}
+achieves the highest single-condition accuracy (0.860 on
+one-shot-unmerged), followed closely by its zero-shot performance
+(0.853), representing a 16.6- and 16.5-point improvement over baseline
+respectively.  Across all four prompting conditions, Haiku 4.5 remains
+between 0.806 and 0.860, exhibiting the narrowest performance spread
+of any model.  \textbf{DeepSeek R1} achieves consistently high
+accuracy (0.801--0.825) with a distinctive profile: near-perfect
+recall on merged PRs (0.99--1.00) at the cost of substantially lower
+recall on unmerged PRs (0.37--0.46), indicating a systematic bias
+toward predicting acceptance.  \textbf{GPT-4o-mini} shows the largest
+variance across prompting conditions (0.716--0.774) and is the only
+model whose few-shot condition (0.774) does not exceed its zero-shot
+(0.773).  \textbf{Mistral Small 3.2-24B Instruct} falls in a similar
+band (0.773--0.808), with one-shot-unmerged (0.799) and few-shot
+(0.808) modestly improving on zero-shot.
+
+Improvement over baseline is stronger on macro-averaged F1 than on
+raw accuracy, since the baseline achieves 0.00 F1 on the minority
+(unmerged) class.  Every non-baseline model--condition combination
+attains F1(No)~$>$~0.5, indicating that all models learn some
+discriminative capacity for unmerged PRs --- a signal the accuracy
+metric alone would understate given the class imbalance.
+
+Two rows of Table~\ref{tab:acceptance} report reduced effective~$N$:
+DeepSeek R1 one-shot-merged ($N=297$, 2 excluded) and one-shot-unmerged
+($N=298$, 1 excluded).  These excluded rows are cases where the model
+returned no parseable JSON output despite retry, and are dropped from
+evaluation per the exclusion policy documented in
+Section~\ref{sec:Method}.
+
+\subsection{RQ2: Flag Generation (Multi-Label)}\label{sec:results-rq2}
+
+Flag generation is a substantially harder task than acceptance
+prediction.  Table~\ref{tab:multilabel} reports the six multi-label
+metrics defined in Section~\ref{sec:Method} across the same
+$4 \times 4$ grid.
+
+% >>> PASTE TABLE 5.2 HERE  (table_5_2_multilabel.tex) <<<
+
+Across all sixteen model--condition combinations, macro-averaged F1
+ranges from 0.003 (GPT-4o-mini few-shot) to 0.543 (DeepSeek R1
+one-shot-unmerged) --- an order-of-magnitude spread that indicates
+flag generation quality is not primarily a function of model quality,
+but interacts strongly with prompting condition.  \textbf{DeepSeek R1
+produces the strongest overall multi-label performance}, achieving the
+highest macro-F1 (0.543 on one-shot-unmerged), highest micro-F1
+(0.774 on one-shot-merged), and lowest Hamming loss (0.138 on
+one-shot-merged) across the grid.  \textbf{Claude Haiku 4.5} exhibits
+the most stable multi-label profile: macro-F1 varies only between
+0.418 and 0.454 across all four conditions, and micro-F1 remains
+between 0.734 and 0.762 --- indicating that in-context examples
+neither meaningfully improve nor degrade its flag-generation
+capability.
+
+The two smallest-capacity models exhibit a pathological pattern under
+few-shot prompting: \textbf{GPT-4o-mini's macro-F1 drops from 0.415
+(zero-shot) to 0.003 (few-shot)}, and \textbf{Mistral's from 0.399 to
+0.016}.  This is not a subtle degradation; it is a near-total collapse
+of measurable flag-generation performance.
+Section~\ref{sec:results-drift} examines the cause of this collapse.
+
+Exact-match accuracy --- the strictest metric, requiring every flag on
+a PR to be predicted correctly with no additions or omissions ---
+remains below 0.06 for every model--condition combination.  This
+reflects the intrinsic difficulty of multi-label prediction over 24
+flags: even a model achieving 0.9 accuracy on each flag independently
+would achieve $0.9^{24} \approx 0.08$ on exact match.  The metric is
+included for completeness but should not be over-interpreted.
+
+\subsection{RQ3: Extractive vs.\ Evaluative Flag
+Categories}\label{sec:results-rq3}
+
+To address RQ3, we partition the 24-flag vocabulary into two
+categories defined by the prompt itself.  \textbf{Extractive flags}
+(4 total) are those whose applicability the prompt states in terms of
+an explicit numeric threshold applied to a field already present in
+the prompt: \texttt{low\_contributor\_acceptance\_rate}
+($<50\%$), \texttt{high\_contributor\_acceptance\_rate}
+($\geq 80\%$), \texttt{large\_number\_of\_changed\_lines}
+($>500$), and \texttt{manageable\_number\_of\_changed\_lines}
+($<300$).  These flags require no semantic judgment --- a model that
+reads the relevant number and correctly applies the stated threshold
+will label them correctly.  \textbf{Evaluative flags} (the remaining
+20) require the model to reason about semantic content --- code
+quality, alignment with the linked issue, sentiment of review
+comments, clarity of PR title or description --- with no explicit
+thresholds supplied.
+
+Table~\ref{tab:extractive-evaluative} reports the average per-flag F1
+within each category, for every model--condition combination.
+
+% >>> PASTE TABLE 5.3 HERE  (table_5_3_extractive_vs_evaluative.tex) <<<
+
+The extractive-vs-evaluative gap is present across every model and
+every non-degenerate prompting condition, ranging from 0.20 (Mistral
+one-shot-unmerged) to 0.49 (GPT-4o-mini zero-shot).  Extractive flags
+are identified reliably: DeepSeek R1 achieves 0.82--0.91 average F1
+on extractive flags across the four conditions, Haiku 4.5 achieves
+0.69--0.79, GPT-4o-mini 0.53--0.78 (excluding its few-shot collapse),
+and Mistral 0.47--0.67.  In contrast, evaluative flags are identified
+only weakly: no model exceeds 0.47 average F1 on evaluative flags in
+any condition, and most fall between 0.30 and 0.44.  This gap is the
+paper's central RQ3 finding.
+
+Inspection of the per-flag detail (per-model tables in the online
+supplementary material) reveals that within the evaluative category,
+four flags --- \texttt{poor\_code\_quality},
+\texttt{overengineered\_solution},
+\texttt{solution\_incorrect\_or\_inefficient}, and to a lesser extent
+\texttt{responsive\_to\_feedback} --- score below F1~$=0.10$ for
+essentially every model and condition.  These four flags all concern
+subjective judgments about code correctness, design appropriateness,
+or contributor behavior across the review lifecycle: assessments a
+human reviewer typically makes only after sustained engagement with
+the code and the discussion around it, drawing on background context
+that is not fully recoverable from the prompt alone.  That current
+LLMs at this scale cannot reliably produce these judgments ---
+regardless of the number of in-context examples provided --- is
+consistent with the pattern observed by prior empirical work on PR
+merge decisions~\cite{Zhang2023,Lenarduzzi2021} that social and
+process-level signals often dominate code-quality signals in the
+actual accept/reject determination.
+
+Extractive flags, in contrast, correspond to structured criteria for
+which the ground-truth is mechanically computable and directly present
+in the prompt.  Their high F1 confirms that the models correctly parse
+and apply the numeric thresholds provided, but is not itself evidence
+of reasoning capacity --- a rule-based system would achieve F1~$=1.0$
+on all four extractive flags without any language model.  The paper's
+principal empirical claim is therefore that, for the
+interpretable-flag-generation task explored here, LLM-based approaches
+deliver reliable performance only on the extractive subset --- the
+same subset most amenable to non-LLM approaches --- and remain
+unreliable on the evaluative subset that motivates their use in the
+first place.
+
+\subsection{Vocabulary Drift Under Few-Shot
+Prompting}\label{sec:results-drift}
+
+Two anomalies in Tables~\ref{tab:multilabel}
+and~\ref{tab:extractive-evaluative} warrant separate analysis:
+GPT-4o-mini's few-shot macro-F1 (0.003) and Mistral's few-shot
+macro-F1 (0.016) are approximately two orders of magnitude below the
+same models' zero-shot performance.  Ordinary explanations ---
+degraded reasoning under more context, distraction by examples --- do
+not fit, because the same models retain competitive
+acceptance-classification accuracy under few-shot prompting (0.774
+and 0.808 respectively; Table~\ref{tab:acceptance}).  Something is
+happening specifically to the model's flag output, not its underlying
+task understanding.
+
+Manual inspection of the raw prediction output identifies the cause:
+under few-shot prompting, both models frequently emit flag names that
+are outside the enumerated vocabulary supplied in the prompt.  Rather
+than the vocabulary-form \texttt{poor\_code\_quality}, the model
+outputs ``Poor code quality'' (case- and separator-inconsistent);
+rather than \texttt{manageable\_number\_of\_changed\_lines}, the model
+outputs \texttt{managerable\_number\_of\_changed\_lines} (typo) or
+\texttt{clear\_commit\_messages} (pluralized).  Occasionally the model
+emits an entirely invented flag name not present in the taxonomy at
+all.  Because per-flag F1 is computed by exact string match against
+the taxonomy, every such emission counts as a false negative for the
+correct flag and yields no true positive.
+Table~\ref{tab:vocab-drift} quantifies this behavior.
+
+% >>> PASTE TABLE 5.4 HERE  (table_5_4_vocab_drift.tex) <<<
+
+Under few-shot prompting, GPT-4o-mini emits at least one
+non-vocabulary flag in \textbf{99.7\% of predictions} (296 of 297
+rows), and Mistral does so in \textbf{98.7\% of predictions} (293 of
+297).  To distinguish this failure mode from genuine reasoning
+failure, we recompute per-flag F1 after applying a conservative
+normalization function that maps case- and separator-variants to their
+vocabulary form (e.g.,\ ``Poor code
+quality''~$\rightarrow$~\texttt{poor\_code\_quality}) but leaves typos
+and invented flag names unchanged.  Under normalization,
+GPT-4o-mini's few-shot macro-F1 recovers from 0.003 to 0.409, and
+Mistral's from 0.016 to 0.402 --- restoring both to a level comparable
+with their zero-shot performance.
+
+Two other models exhibit essentially no such drift: \textbf{Claude
+Haiku 4.5 emits non-vocabulary flags in at most 0.3\% of predictions
+in any condition}, and \textbf{DeepSeek R1 in at most 6.1\% (few-shot)},
+with zero-shot DeepSeek R1 drifting on only 0.7\% of predictions.
+The gap between drift-prone and drift-free models does not track
+model size or open-vs-closed provenance: GPT-4o-mini and Haiku 4.5
+are the two smallest closed-source models in our set, yet exhibit
+opposite drift behavior.  We interpret this finding as evidence that
+instruction-following robustness under longer in-context contexts is
+a distinct dimension of model capability from either semantic
+reasoning or model scale, and one that materially affects how much
+can be inferred about a model's flag-generation capacity from summary
+metrics alone.
+
+For the remainder of this paper, we report both the strict and
+normalized macro-F1 values for the two drift-affected models where
+relevant.  The tables and analyses in
+Sections~\ref{sec:results-rq1}--\ref{sec:results-rq3} use the strict
+values, matching the standard evaluation protocol; the normalization
+above is presented as a diagnostic, not as a substitute for the
+strict evaluation.

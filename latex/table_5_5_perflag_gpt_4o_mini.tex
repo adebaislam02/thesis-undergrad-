@@ -1,0 +1,39 @@
+\begin{table}[t]
+\centering
+\caption{Per-flag F1 for GPT-4o-mini across the four prompting
+conditions. Rows are the 24 flags in the taxonomy defined in
+Section~\ref{sec:Method}; the \emph{Average} column is the mean across
+the four conditions.}
+\label{tab:perflag-gpt-4o-mini}
+\small
+\begin{tabular}{lccccc}
+\toprule
+Flag & 0-S & 1S-M & 1S-U & Few-S & Avg. \\
+\midrule
+\texttt{pr\_not\_aligned\_with\_issue} & 0.32 & 0.27 & 0.26 & 0.00 & 0.21 \\
+\texttt{missing\_or\_inadequate\_test\_cases} & 0.09 & 0.14 & 0.11 & 0.02 & 0.09 \\
+\texttt{low\_contributor\_acceptance\_rate} & 0.80 & 0.65 & 0.69 & 0.00 & 0.53 \\
+\texttt{negative\_sentiment\_in\_comments} & 0.07 & 0.26 & 0.27 & 0.00 & 0.15 \\
+\texttt{large\_number\_of\_changed\_lines} & 0.48 & 0.28 & 0.25 & 0.00 & 0.25 \\
+\texttt{unclear\_or\_missing\_pr\_title} & 0.00 & 0.04 & 0.05 & 0.00 & 0.02 \\
+\texttt{unclear\_or\_missing\_pr\_description} & 0.08 & 0.06 & 0.07 & 0.00 & 0.05 \\
+\texttt{unclear\_or\_missing\_commit\_messages} & 0.00 & 0.06 & 0.12 & 0.00 & 0.05 \\
+\texttt{poor\_code\_quality} & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 \\
+\texttt{unresponsive\_after\_feedback} & 0.14 & 0.17 & 0.14 & 0.00 & 0.11 \\
+\texttt{fails\_tests} & 0.25 & 0.29 & 0.00 & 0.00 & 0.13 \\
+\texttt{breaks\_compatibility} & 0.29 & 0.25 & 0.13 & 0.00 & 0.17 \\
+\texttt{solution\_incorrect\_or\_inefficient} & 0.29 & 0.10 & 0.14 & 0.00 & 0.13 \\
+\texttt{overengineered\_solution} & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 \\
+\texttt{clear\_alignment\_with\_issue} & 0.93 & 0.90 & 0.54 & 0.01 & 0.59 \\
+\texttt{includes\_test\_cases} & 0.67 & 0.67 & 0.35 & 0.00 & 0.42 \\
+\texttt{high\_contributor\_acceptance\_rate} & 0.88 & 0.87 & 0.59 & 0.01 & 0.59 \\
+\texttt{positive\_sentiment\_in\_comments} & 0.59 & 0.54 & 0.40 & 0.00 & 0.38 \\
+\texttt{manageable\_number\_of\_changed\_lines} & 0.96 & 0.91 & 0.60 & 0.01 & 0.62 \\
+\texttt{clear\_pr\_title} & 0.88 & 0.88 & 0.50 & 0.01 & 0.56 \\
+\texttt{clear\_pr\_description} & 0.75 & 0.72 & 0.47 & 0.01 & 0.49 \\
+\texttt{clear\_commit\_message} & 0.83 & 0.75 & 0.44 & 0.01 & 0.51 \\
+\texttt{good\_code\_quality} & 0.08 & 0.14 & 0.07 & 0.00 & 0.07 \\
+\texttt{responsive\_to\_feedback} & 0.57 & 0.07 & 0.12 & 0.00 & 0.19 \\
+\bottomrule
+\end{tabular}
+\end{table}

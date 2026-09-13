@@ -1,0 +1,32 @@
+\begin{table}[t]
+\centering
+\caption{Average per-flag F1 within the two flag categories defined in
+Section~\ref{sec:Method}: \emph{extractive} (4 flags with explicit
+numeric thresholds in the prompt) versus \emph{evaluative} (20 flags
+requiring semantic judgment). The gap column reports
+(extractive $-$ evaluative).}
+\label{tab:extractive-evaluative}
+\small
+\begin{tabular}{llccc}
+\toprule
+Model & Cond. & Extractive & Evaluative & Gap \\
+\midrule
+GPT-4o-mini & 0-S & 0.780 & 0.342 & +0.438 \\
+ & 1S-M & 0.677 & 0.315 & +0.362 \\
+ & 1S-U & 0.530 & 0.209 & +0.320 \\
+ & Few-S & 0.004 & 0.003 & +0.001 \\
+Haiku 4.5 & 0-S & 0.791 & 0.384 & +0.407 \\
+ & 1S-M & 0.718 & 0.359 & +0.359 \\
+ & 1S-U & 0.747 & 0.389 & +0.358 \\
+ & Few-S & 0.692 & 0.406 & +0.286 \\
+DeepSeek R1 & 0-S & 0.898 & 0.437 & +0.461 \\
+ & 1S-M & 0.888 & 0.424 & +0.464 \\
+ & 1S-U & 0.906 & 0.470 & +0.437 \\
+ & Few-S & 0.821 & 0.386 & +0.435 \\
+Mistral 3.2-24B & 0-S & 0.673 & 0.344 & +0.329 \\
+ & 1S-M & 0.555 & 0.307 & +0.248 \\
+ & 1S-U & 0.467 & 0.267 & +0.200 \\
+ & Few-S & 0.018 & 0.015 & +0.003 \\
+\bottomrule
+\end{tabular}
+\end{table}

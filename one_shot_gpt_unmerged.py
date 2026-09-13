@@ -11,9 +11,8 @@ from tqdm import tqdm
 from sklearn.metrics import accuracy_score, classification_report, precision_recall_fscore_support, hamming_loss
 
 
-# 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
 
-API_KEY = "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"  # Replace with your OpenRouter API key
+API_KEY = os.environ.get("OPENROUTER_API_KEY")
 API_URL = "https://openrouter.ai/api/v1/chat/completions"
 
 

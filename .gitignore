@@ -1,1 +1,6 @@
 venv/
+.env
+*.pre_recovery_backup
+*.PRE_RECOVERY_BACKUP.csv
+*.corrupted_backup
+*.RECOVERED.csv

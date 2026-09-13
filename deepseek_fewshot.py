@@ -10,7 +10,7 @@ import os
 from tqdm import tqdm
 
 # --- CONSTANTS ---
-OPENROUTER_API_KEY = "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"  # <-- Replace with your own key
+OPENROUTER_API_KEY = os.environ.get("OPENROUTER_API_KEY")
 DEEPSEEK_API_KEY = OPENROUTER_API_KEY  # reuse the same key constant
 DEEPSEEK_MODEL_NAME = "deepseek/deepseek-r1:free"
 DEEPSEEK_API_URL = "https://openrouter.ai/api/v1/chat/completions"

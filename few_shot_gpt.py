@@ -10,7 +10,7 @@ import os
 from tqdm import tqdm
 
 # --- CONSTANTS ---
-OPENROUTER_API_KEY = "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"  # <-- Replace with your own key
+OPENROUTER_API_KEY = os.environ.get("OPENROUTER_API_KEY")
 MODEL_NAME = "openai/gpt-4o-mini"    # Use whichever path is correct for OpenRouter
 INPUT_FILE = "FINAL_DATASET - 300_Annotated.csv"
 OUTPUT_FILE = "_GPT_batch_fewSHOT_testtt.csv"

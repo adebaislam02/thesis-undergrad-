@@ -1,0 +1,39 @@
+\begin{table}[t]
+\centering
+\caption{Per-flag F1 for DeepSeek R1 across the four prompting
+conditions. Rows are the 24 flags in the taxonomy defined in
+Section~\ref{sec:Method}; the \emph{Average} column is the mean across
+the four conditions.}
+\label{tab:perflag-deepseek-r1}
+\small
+\begin{tabular}{lccccc}
+\toprule
+Flag & 0-S & 1S-M & 1S-U & Few-S & Avg. \\
+\midrule
+\texttt{pr\_not\_aligned\_with\_issue} & 0.28 & 0.07 & 0.11 & 0.19 & 0.16 \\
+\texttt{missing\_or\_inadequate\_test\_cases} & 0.61 & 0.73 & 0.73 & 0.70 & 0.69 \\
+\texttt{low\_contributor\_acceptance\_rate} & 0.88 & 0.83 & 0.88 & 0.71 & 0.83 \\
+\texttt{negative\_sentiment\_in\_comments} & 0.35 & 0.46 & 0.39 & 0.00 & 0.30 \\
+\texttt{large\_number\_of\_changed\_lines} & 0.74 & 0.74 & 0.78 & 0.67 & 0.73 \\
+\texttt{unclear\_or\_missing\_pr\_title} & 0.12 & 0.08 & 0.14 & 0.34 & 0.17 \\
+\texttt{unclear\_or\_missing\_pr\_description} & 0.10 & 0.44 & 0.42 & 0.28 & 0.31 \\
+\texttt{unclear\_or\_missing\_commit\_messages} & 0.32 & 0.34 & 0.42 & 0.29 & 0.34 \\
+\texttt{poor\_code\_quality} & 0.00 & 0.18 & 0.13 & 0.00 & 0.08 \\
+\texttt{unresponsive\_after\_feedback} & 0.44 & 0.29 & 0.50 & 0.00 & 0.31 \\
+\texttt{fails\_tests} & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 \\
+\texttt{breaks\_compatibility} & 0.55 & 0.33 & 0.50 & 0.23 & 0.40 \\
+\texttt{solution\_incorrect\_or\_inefficient} & 0.49 & 0.36 & 0.45 & 0.48 & 0.45 \\
+\texttt{overengineered\_solution} & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 \\
+\texttt{clear\_alignment\_with\_issue} & 0.96 & 0.95 & 0.94 & 0.93 & 0.94 \\
+\texttt{includes\_test\_cases} & 0.94 & 0.91 & 0.92 & 0.91 & 0.92 \\
+\texttt{high\_contributor\_acceptance\_rate} & 1.00 & 1.00 & 0.99 & 0.95 & 0.99 \\
+\texttt{positive\_sentiment\_in\_comments} & 0.48 & 0.16 & 0.54 & 0.30 & 0.37 \\
+\texttt{manageable\_number\_of\_changed\_lines} & 0.98 & 0.98 & 0.97 & 0.95 & 0.97 \\
+\texttt{clear\_pr\_title} & 0.87 & 0.91 & 0.88 & 0.87 & 0.88 \\
+\texttt{clear\_pr\_description} & 0.74 & 0.78 & 0.74 & 0.74 & 0.75 \\
+\texttt{clear\_commit\_message} & 0.72 & 0.74 & 0.79 & 0.69 & 0.74 \\
+\texttt{good\_code\_quality} & 0.07 & 0.08 & 0.10 & 0.10 & 0.09 \\
+\texttt{responsive\_to\_feedback} & 0.69 & 0.68 & 0.69 & 0.65 & 0.68 \\
+\bottomrule
+\end{tabular}
+\end{table}

@@ -1,0 +1,17 @@
+model,condition,extractive_avg_F1,evaluative_avg_F1,gap,n_extractive_flags,n_evaluative_flags
+GPT-4o-mini,zero-shot,0.78,0.342,0.438,4,20
+GPT-4o-mini,one-shot-merged,0.677,0.315,0.362,4,20
+GPT-4o-mini,one-shot-unmerged,0.53,0.209,0.32,4,20
+GPT-4o-mini,few-shot,0.004,0.003,0.001,4,20
+Claude Haiku 4.5,zero-shot,0.791,0.384,0.407,4,20
+Claude Haiku 4.5,one-shot-merged,0.718,0.359,0.359,4,20
+Claude Haiku 4.5,one-shot-unmerged,0.747,0.389,0.358,4,20
+Claude Haiku 4.5,few-shot,0.692,0.406,0.286,4,20
+DeepSeek R1,zero-shot,0.898,0.437,0.461,4,20
+DeepSeek R1,one-shot-merged,0.888,0.424,0.464,4,20
+DeepSeek R1,one-shot-unmerged,0.906,0.47,0.437,4,20
+DeepSeek R1,few-shot,0.821,0.386,0.435,4,20
+Mistral 3.2-24B,zero-shot,0.673,0.344,0.329,4,20
+Mistral 3.2-24B,one-shot-merged,0.555,0.307,0.248,4,20
+Mistral 3.2-24B,one-shot-unmerged,0.467,0.267,0.2,4,20
+Mistral 3.2-24B,few-shot,0.018,0.015,0.003,4,20

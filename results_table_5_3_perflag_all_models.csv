@@ -1,0 +1,385 @@
+model,condition,flag,precision,recall,f1,support
+GPT-4o-mini,zero-shot,pr_not_aligned_with_issue,0.265,0.409,0.321,22
+GPT-4o-mini,zero-shot,missing_or_inadequate_test_cases,0.444,0.048,0.087,83
+GPT-4o-mini,zero-shot,low_contributor_acceptance_rate,0.75,0.857,0.8,14
+GPT-4o-mini,zero-shot,negative_sentiment_in_comments,0.067,0.062,0.065,16
+GPT-4o-mini,zero-shot,large_number_of_changed_lines,0.348,0.8,0.485,10
+GPT-4o-mini,zero-shot,unclear_or_missing_pr_title,0.0,0.0,0.0,40
+GPT-4o-mini,zero-shot,unclear_or_missing_pr_description,0.833,0.043,0.083,115
+GPT-4o-mini,zero-shot,unclear_or_missing_commit_messages,0.0,0.0,0.0,60
+GPT-4o-mini,zero-shot,poor_code_quality,0.0,0.0,0.0,4
+GPT-4o-mini,zero-shot,unresponsive_after_feedback,0.333,0.091,0.143,11
+GPT-4o-mini,zero-shot,fails_tests,0.25,0.25,0.25,4
+GPT-4o-mini,zero-shot,breaks_compatibility,0.667,0.182,0.286,11
+GPT-4o-mini,zero-shot,solution_incorrect_or_inefficient,0.7,0.184,0.292,38
+GPT-4o-mini,zero-shot,overengineered_solution,0.0,0.0,0.0,6
+GPT-4o-mini,zero-shot,clear_alignment_with_issue,0.918,0.949,0.933,273
+GPT-4o-mini,zero-shot,includes_test_cases,0.515,0.944,0.667,142
+GPT-4o-mini,zero-shot,high_contributor_acceptance_rate,0.779,1.0,0.876,208
+GPT-4o-mini,zero-shot,positive_sentiment_in_comments,0.441,0.895,0.591,105
+GPT-4o-mini,zero-shot,manageable_number_of_changed_lines,0.957,0.957,0.957,279
+GPT-4o-mini,zero-shot,clear_pr_title,0.868,0.895,0.882,258
+GPT-4o-mini,zero-shot,clear_pr_description,0.641,0.908,0.752,185
+GPT-4o-mini,zero-shot,clear_commit_message,0.79,0.877,0.831,236
+GPT-4o-mini,zero-shot,good_code_quality,0.04,0.692,0.076,13
+GPT-4o-mini,zero-shot,responsive_to_feedback,0.675,0.5,0.575,104
+GPT-4o-mini,one-shot-merged,pr_not_aligned_with_issue,0.211,0.364,0.267,22
+GPT-4o-mini,one-shot-merged,missing_or_inadequate_test_cases,0.5,0.084,0.144,83
+GPT-4o-mini,one-shot-merged,low_contributor_acceptance_rate,0.483,1.0,0.651,14
+GPT-4o-mini,one-shot-merged,negative_sentiment_in_comments,0.179,0.467,0.259,15
+GPT-4o-mini,one-shot-merged,large_number_of_changed_lines,0.17,0.8,0.281,10
+GPT-4o-mini,one-shot-merged,unclear_or_missing_pr_title,0.167,0.025,0.043,40
+GPT-4o-mini,one-shot-merged,unclear_or_missing_pr_description,0.364,0.035,0.064,114
+GPT-4o-mini,one-shot-merged,unclear_or_missing_commit_messages,0.667,0.033,0.063,60
+GPT-4o-mini,one-shot-merged,poor_code_quality,0.0,0.0,0.0,4
+GPT-4o-mini,one-shot-merged,unresponsive_after_feedback,1.0,0.091,0.167,11
+GPT-4o-mini,one-shot-merged,fails_tests,0.333,0.25,0.286,4
+GPT-4o-mini,one-shot-merged,breaks_compatibility,0.4,0.182,0.25,11
+GPT-4o-mini,one-shot-merged,solution_incorrect_or_inefficient,1.0,0.053,0.1,38
+GPT-4o-mini,one-shot-merged,overengineered_solution,0.0,0.0,0.0,6
+GPT-4o-mini,one-shot-merged,clear_alignment_with_issue,0.94,0.857,0.896,272
+GPT-4o-mini,one-shot-merged,includes_test_cases,0.553,0.844,0.669,141
+GPT-4o-mini,one-shot-merged,high_contributor_acceptance_rate,0.783,0.976,0.869,207
+GPT-4o-mini,one-shot-merged,positive_sentiment_in_comments,0.574,0.514,0.543,105
+GPT-4o-mini,one-shot-merged,manageable_number_of_changed_lines,0.967,0.856,0.908,278
+GPT-4o-mini,one-shot-merged,clear_pr_title,0.866,0.883,0.875,257
+GPT-4o-mini,one-shot-merged,clear_pr_description,0.627,0.843,0.719,185
+GPT-4o-mini,one-shot-merged,clear_commit_message,0.796,0.715,0.753,235
+GPT-4o-mini,one-shot-merged,good_code_quality,0.125,0.154,0.138,13
+GPT-4o-mini,one-shot-merged,responsive_to_feedback,0.8,0.038,0.073,104
+GPT-4o-mini,one-shot-unmerged,pr_not_aligned_with_issue,0.212,0.318,0.255,22
+GPT-4o-mini,one-shot-unmerged,missing_or_inadequate_test_cases,0.261,0.073,0.114,82
+GPT-4o-mini,one-shot-unmerged,low_contributor_acceptance_rate,0.571,0.857,0.686,14
+GPT-4o-mini,one-shot-unmerged,negative_sentiment_in_comments,0.214,0.375,0.273,16
+GPT-4o-mini,one-shot-unmerged,large_number_of_changed_lines,0.149,0.7,0.246,10
+GPT-4o-mini,one-shot-unmerged,unclear_or_missing_pr_title,0.333,0.026,0.048,39
+GPT-4o-mini,one-shot-unmerged,unclear_or_missing_pr_description,0.667,0.035,0.067,114
+GPT-4o-mini,one-shot-unmerged,unclear_or_missing_commit_messages,0.667,0.067,0.121,60
+GPT-4o-mini,one-shot-unmerged,poor_code_quality,0.0,0.0,0.0,4
+GPT-4o-mini,one-shot-unmerged,unresponsive_after_feedback,0.333,0.091,0.143,11
+GPT-4o-mini,one-shot-unmerged,fails_tests,0.0,0.0,0.0,4
+GPT-4o-mini,one-shot-unmerged,breaks_compatibility,0.25,0.091,0.133,11
+GPT-4o-mini,one-shot-unmerged,solution_incorrect_or_inefficient,0.6,0.079,0.14,38
+GPT-4o-mini,one-shot-unmerged,overengineered_solution,0.0,0.0,0.0,6
+GPT-4o-mini,one-shot-unmerged,clear_alignment_with_issue,0.898,0.39,0.544,272
+GPT-4o-mini,one-shot-unmerged,includes_test_cases,0.688,0.232,0.347,142
+GPT-4o-mini,one-shot-unmerged,high_contributor_acceptance_rate,0.826,0.457,0.588,208
+GPT-4o-mini,one-shot-unmerged,positive_sentiment_in_comments,0.446,0.356,0.396,104
+GPT-4o-mini,one-shot-unmerged,manageable_number_of_changed_lines,0.938,0.439,0.598,278
+GPT-4o-mini,one-shot-unmerged,clear_pr_title,0.881,0.345,0.496,258
+GPT-4o-mini,one-shot-unmerged,clear_pr_description,0.67,0.362,0.47,185
+GPT-4o-mini,one-shot-unmerged,clear_commit_message,0.774,0.306,0.439,235
+GPT-4o-mini,one-shot-unmerged,good_code_quality,0.05,0.154,0.075,13
+GPT-4o-mini,one-shot-unmerged,responsive_to_feedback,0.875,0.067,0.125,104
+GPT-4o-mini,few-shot,pr_not_aligned_with_issue,0.0,0.0,0.0,22
+GPT-4o-mini,few-shot,missing_or_inadequate_test_cases,1.0,0.012,0.024,81
+GPT-4o-mini,few-shot,low_contributor_acceptance_rate,0.0,0.0,0.0,13
+GPT-4o-mini,few-shot,negative_sentiment_in_comments,0.0,0.0,0.0,16
+GPT-4o-mini,few-shot,large_number_of_changed_lines,0.0,0.0,0.0,10
+GPT-4o-mini,few-shot,unclear_or_missing_pr_title,0.0,0.0,0.0,40
+GPT-4o-mini,few-shot,unclear_or_missing_pr_description,0.0,0.0,0.0,114
+GPT-4o-mini,few-shot,unclear_or_missing_commit_messages,0.0,0.0,0.0,58
+GPT-4o-mini,few-shot,poor_code_quality,0.0,0.0,0.0,4
+GPT-4o-mini,few-shot,unresponsive_after_feedback,0.0,0.0,0.0,11
+GPT-4o-mini,few-shot,fails_tests,0.0,0.0,0.0,4
+GPT-4o-mini,few-shot,breaks_compatibility,0.0,0.0,0.0,11
+GPT-4o-mini,few-shot,solution_incorrect_or_inefficient,0.0,0.0,0.0,37
+GPT-4o-mini,few-shot,overengineered_solution,0.0,0.0,0.0,6
+GPT-4o-mini,few-shot,clear_alignment_with_issue,1.0,0.004,0.007,270
+GPT-4o-mini,few-shot,includes_test_cases,0.0,0.0,0.0,141
+GPT-4o-mini,few-shot,high_contributor_acceptance_rate,1.0,0.005,0.01,206
+GPT-4o-mini,few-shot,positive_sentiment_in_comments,0.0,0.0,0.0,104
+GPT-4o-mini,few-shot,manageable_number_of_changed_lines,1.0,0.004,0.007,276
+GPT-4o-mini,few-shot,clear_pr_title,1.0,0.004,0.008,255
+GPT-4o-mini,few-shot,clear_pr_description,1.0,0.005,0.011,183
+GPT-4o-mini,few-shot,clear_commit_message,1.0,0.004,0.008,235
+GPT-4o-mini,few-shot,good_code_quality,0.0,0.0,0.0,13
+GPT-4o-mini,few-shot,responsive_to_feedback,0.0,0.0,0.0,102
+Claude Haiku 4.5,zero-shot,pr_not_aligned_with_issue,0.139,0.227,0.172,22
+Claude Haiku 4.5,zero-shot,missing_or_inadequate_test_cases,0.8,0.048,0.091,83
+Claude Haiku 4.5,zero-shot,low_contributor_acceptance_rate,0.923,0.857,0.889,14
+Claude Haiku 4.5,zero-shot,negative_sentiment_in_comments,0.5,0.25,0.333,16
+Claude Haiku 4.5,zero-shot,large_number_of_changed_lines,0.5,0.3,0.375,10
+Claude Haiku 4.5,zero-shot,unclear_or_missing_pr_title,0.0,0.0,0.0,40
+Claude Haiku 4.5,zero-shot,unclear_or_missing_pr_description,0.75,0.026,0.05,115
+Claude Haiku 4.5,zero-shot,unclear_or_missing_commit_messages,0.6,0.1,0.171,60
+Claude Haiku 4.5,zero-shot,poor_code_quality,0.0,0.0,0.0,4
+Claude Haiku 4.5,zero-shot,unresponsive_after_feedback,0.25,0.364,0.296,11
+Claude Haiku 4.5,zero-shot,fails_tests,0.333,0.25,0.286,4
+Claude Haiku 4.5,zero-shot,breaks_compatibility,0.333,0.182,0.235,11
+Claude Haiku 4.5,zero-shot,solution_incorrect_or_inefficient,0.619,0.342,0.441,38
+Claude Haiku 4.5,zero-shot,overengineered_solution,0.0,0.0,0.0,6
+Claude Haiku 4.5,zero-shot,clear_alignment_with_issue,0.926,0.919,0.923,273
+Claude Haiku 4.5,zero-shot,includes_test_cases,0.74,0.923,0.821,142
+Claude Haiku 4.5,zero-shot,high_contributor_acceptance_rate,0.863,1.0,0.927,208
+Claude Haiku 4.5,zero-shot,positive_sentiment_in_comments,0.526,0.667,0.588,105
+Claude Haiku 4.5,zero-shot,manageable_number_of_changed_lines,0.955,0.993,0.974,279
+Claude Haiku 4.5,zero-shot,clear_pr_title,0.861,0.988,0.921,258
+Claude Haiku 4.5,zero-shot,clear_pr_description,0.641,0.995,0.78,185
+Claude Haiku 4.5,zero-shot,clear_commit_message,0.831,0.915,0.871,236
+Claude Haiku 4.5,zero-shot,good_code_quality,0.045,0.846,0.085,13
+Claude Haiku 4.5,zero-shot,responsive_to_feedback,0.574,0.673,0.619,104
+Claude Haiku 4.5,one-shot-merged,pr_not_aligned_with_issue,0.19,0.364,0.25,22
+Claude Haiku 4.5,one-shot-merged,missing_or_inadequate_test_cases,0.4,0.024,0.045,83
+Claude Haiku 4.5,one-shot-merged,low_contributor_acceptance_rate,0.333,0.929,0.491,14
+Claude Haiku 4.5,one-shot-merged,negative_sentiment_in_comments,0.212,0.467,0.292,15
+Claude Haiku 4.5,one-shot-merged,large_number_of_changed_lines,0.35,0.7,0.467,10
+Claude Haiku 4.5,one-shot-merged,unclear_or_missing_pr_title,0.0,0.0,0.0,40
+Claude Haiku 4.5,one-shot-merged,unclear_or_missing_pr_description,0.469,0.132,0.205,114
+Claude Haiku 4.5,one-shot-merged,unclear_or_missing_commit_messages,0.636,0.117,0.197,60
+Claude Haiku 4.5,one-shot-merged,poor_code_quality,0.0,0.0,0.0,4
+Claude Haiku 4.5,one-shot-merged,unresponsive_after_feedback,0.227,0.455,0.303,11
+Claude Haiku 4.5,one-shot-merged,fails_tests,0.0,0.0,0.0,4
+Claude Haiku 4.5,one-shot-merged,breaks_compatibility,0.25,0.091,0.133,11
+Claude Haiku 4.5,one-shot-merged,solution_incorrect_or_inefficient,0.308,0.105,0.157,38
+Claude Haiku 4.5,one-shot-merged,overengineered_solution,0.0,0.0,0.0,6
+Claude Haiku 4.5,one-shot-merged,clear_alignment_with_issue,0.938,0.897,0.917,272
+Claude Haiku 4.5,one-shot-merged,includes_test_cases,0.862,0.929,0.894,141
+Claude Haiku 4.5,one-shot-merged,high_contributor_acceptance_rate,0.888,1.0,0.941,207
+Claude Haiku 4.5,one-shot-merged,positive_sentiment_in_comments,0.57,0.581,0.575,105
+Claude Haiku 4.5,one-shot-merged,manageable_number_of_changed_lines,0.965,0.978,0.971,278
+Claude Haiku 4.5,one-shot-merged,clear_pr_title,0.86,0.977,0.914,257
+Claude Haiku 4.5,one-shot-merged,clear_pr_description,0.735,0.795,0.764,185
+Claude Haiku 4.5,one-shot-merged,clear_commit_message,0.817,0.872,0.844,235
+Claude Haiku 4.5,one-shot-merged,good_code_quality,0.05,0.692,0.093,13
+Claude Haiku 4.5,one-shot-merged,responsive_to_feedback,0.758,0.481,0.588,104
+Claude Haiku 4.5,one-shot-unmerged,pr_not_aligned_with_issue,0.178,0.364,0.239,22
+Claude Haiku 4.5,one-shot-unmerged,missing_or_inadequate_test_cases,0.571,0.098,0.167,82
+Claude Haiku 4.5,one-shot-unmerged,low_contributor_acceptance_rate,0.667,0.857,0.75,14
+Claude Haiku 4.5,one-shot-unmerged,negative_sentiment_in_comments,0.333,0.188,0.24,16
+Claude Haiku 4.5,one-shot-unmerged,large_number_of_changed_lines,0.308,0.4,0.348,10
+Claude Haiku 4.5,one-shot-unmerged,unclear_or_missing_pr_title,0.2,0.026,0.045,39
+Claude Haiku 4.5,one-shot-unmerged,unclear_or_missing_pr_description,0.667,0.07,0.127,114
+Claude Haiku 4.5,one-shot-unmerged,unclear_or_missing_commit_messages,0.526,0.167,0.253,60
+Claude Haiku 4.5,one-shot-unmerged,poor_code_quality,0.0,0.0,0.0,4
+Claude Haiku 4.5,one-shot-unmerged,unresponsive_after_feedback,0.194,0.636,0.298,11
+Claude Haiku 4.5,one-shot-unmerged,fails_tests,0.0,0.0,0.0,4
+Claude Haiku 4.5,one-shot-unmerged,breaks_compatibility,0.6,0.273,0.375,11
+Claude Haiku 4.5,one-shot-unmerged,solution_incorrect_or_inefficient,0.478,0.289,0.361,38
+Claude Haiku 4.5,one-shot-unmerged,overengineered_solution,0.0,0.0,0.0,6
+Claude Haiku 4.5,one-shot-unmerged,clear_alignment_with_issue,0.935,0.893,0.914,272
+Claude Haiku 4.5,one-shot-unmerged,includes_test_cases,0.914,0.901,0.908,142
+Claude Haiku 4.5,one-shot-unmerged,high_contributor_acceptance_rate,0.863,1.0,0.927,208
+Claude Haiku 4.5,one-shot-unmerged,positive_sentiment_in_comments,0.484,0.721,0.579,104
+Claude Haiku 4.5,one-shot-unmerged,manageable_number_of_changed_lines,0.961,0.968,0.964,278
+Claude Haiku 4.5,one-shot-unmerged,clear_pr_title,0.894,0.853,0.873,258
+Claude Haiku 4.5,one-shot-unmerged,clear_pr_description,0.733,0.832,0.78,185
+Claude Haiku 4.5,one-shot-unmerged,clear_commit_message,0.82,0.928,0.87,235
+Claude Haiku 4.5,one-shot-unmerged,good_code_quality,0.055,0.769,0.103,13
+Claude Haiku 4.5,one-shot-unmerged,responsive_to_feedback,0.66,0.635,0.647,104
+Claude Haiku 4.5,few-shot,pr_not_aligned_with_issue,0.25,0.227,0.238,22
+Claude Haiku 4.5,few-shot,missing_or_inadequate_test_cases,0.638,0.457,0.532,81
+Claude Haiku 4.5,few-shot,low_contributor_acceptance_rate,0.556,0.769,0.645,13
+Claude Haiku 4.5,few-shot,negative_sentiment_in_comments,0.2,0.062,0.095,16
+Claude Haiku 4.5,few-shot,large_number_of_changed_lines,0.25,0.2,0.222,10
+Claude Haiku 4.5,few-shot,unclear_or_missing_pr_title,0.333,0.025,0.047,40
+Claude Haiku 4.5,few-shot,unclear_or_missing_pr_description,0.443,0.272,0.337,114
+Claude Haiku 4.5,few-shot,unclear_or_missing_commit_messages,0.41,0.276,0.33,58
+Claude Haiku 4.5,few-shot,poor_code_quality,0.0,0.0,0.0,4
+Claude Haiku 4.5,few-shot,unresponsive_after_feedback,0.304,0.636,0.412,11
+Claude Haiku 4.5,few-shot,fails_tests,0.0,0.0,0.0,4
+Claude Haiku 4.5,few-shot,breaks_compatibility,0.4,0.182,0.25,11
+Claude Haiku 4.5,few-shot,solution_incorrect_or_inefficient,0.364,0.108,0.167,37
+Claude Haiku 4.5,few-shot,overengineered_solution,0.0,0.0,0.0,6
+Claude Haiku 4.5,few-shot,clear_alignment_with_issue,0.925,0.959,0.942,270
+Claude Haiku 4.5,few-shot,includes_test_cases,0.963,0.922,0.942,141
+Claude Haiku 4.5,few-shot,high_contributor_acceptance_rate,0.877,1.0,0.934,206
+Claude Haiku 4.5,few-shot,positive_sentiment_in_comments,0.579,0.529,0.553,104
+Claude Haiku 4.5,few-shot,manageable_number_of_changed_lines,0.945,0.993,0.968,276
+Claude Haiku 4.5,few-shot,clear_pr_title,0.868,0.957,0.91,255
+Claude Haiku 4.5,few-shot,clear_pr_description,0.714,0.749,0.731,183
+Claude Haiku 4.5,few-shot,clear_commit_message,0.839,0.821,0.83,235
+Claude Haiku 4.5,few-shot,good_code_quality,0.057,0.538,0.103,13
+Claude Haiku 4.5,few-shot,responsive_to_feedback,0.626,0.804,0.704,102
+DeepSeek R1,zero-shot,pr_not_aligned_with_issue,0.357,0.227,0.278,22
+DeepSeek R1,zero-shot,missing_or_inadequate_test_cases,0.741,0.518,0.61,83
+DeepSeek R1,zero-shot,low_contributor_acceptance_rate,1.0,0.786,0.88,14
+DeepSeek R1,zero-shot,negative_sentiment_in_comments,0.333,0.375,0.353,16
+DeepSeek R1,zero-shot,large_number_of_changed_lines,0.778,0.7,0.737,10
+DeepSeek R1,zero-shot,unclear_or_missing_pr_title,0.375,0.075,0.125,40
+DeepSeek R1,zero-shot,unclear_or_missing_pr_description,0.75,0.052,0.098,115
+DeepSeek R1,zero-shot,unclear_or_missing_commit_messages,0.483,0.233,0.315,60
+DeepSeek R1,zero-shot,poor_code_quality,0.0,0.0,0.0,4
+DeepSeek R1,zero-shot,unresponsive_after_feedback,0.571,0.364,0.444,11
+DeepSeek R1,zero-shot,fails_tests,0.0,0.0,0.0,4
+DeepSeek R1,zero-shot,breaks_compatibility,0.545,0.545,0.545,11
+DeepSeek R1,zero-shot,solution_incorrect_or_inefficient,0.593,0.421,0.492,38
+DeepSeek R1,zero-shot,overengineered_solution,0.0,0.0,0.0,6
+DeepSeek R1,zero-shot,clear_alignment_with_issue,0.928,0.985,0.956,273
+DeepSeek R1,zero-shot,includes_test_cases,0.919,0.965,0.942,142
+DeepSeek R1,zero-shot,high_contributor_acceptance_rate,0.995,1.0,0.998,208
+DeepSeek R1,zero-shot,positive_sentiment_in_comments,0.631,0.39,0.482,105
+DeepSeek R1,zero-shot,manageable_number_of_changed_lines,0.978,0.975,0.977,279
+DeepSeek R1,zero-shot,clear_pr_title,0.872,0.872,0.872,258
+DeepSeek R1,zero-shot,clear_pr_description,0.637,0.892,0.743,185
+DeepSeek R1,zero-shot,clear_commit_message,0.869,0.619,0.723,236
+DeepSeek R1,zero-shot,good_code_quality,0.036,0.538,0.067,13
+DeepSeek R1,zero-shot,responsive_to_feedback,0.689,0.702,0.695,104
+DeepSeek R1,one-shot-merged,pr_not_aligned_with_issue,0.111,0.05,0.069,20
+DeepSeek R1,one-shot-merged,missing_or_inadequate_test_cases,0.741,0.723,0.732,83
+DeepSeek R1,one-shot-merged,low_contributor_acceptance_rate,0.909,0.769,0.833,13
+DeepSeek R1,one-shot-merged,negative_sentiment_in_comments,0.4,0.533,0.457,15
+DeepSeek R1,one-shot-merged,large_number_of_changed_lines,0.778,0.7,0.737,10
+DeepSeek R1,one-shot-merged,unclear_or_missing_pr_title,0.2,0.05,0.08,40
+DeepSeek R1,one-shot-merged,unclear_or_missing_pr_description,0.679,0.321,0.436,112
+DeepSeek R1,one-shot-merged,unclear_or_missing_commit_messages,0.391,0.3,0.34,60
+DeepSeek R1,one-shot-merged,poor_code_quality,0.143,0.25,0.182,4
+DeepSeek R1,one-shot-merged,unresponsive_after_feedback,0.667,0.182,0.286,11
+DeepSeek R1,one-shot-merged,fails_tests,0.0,0.0,0.0,4
+DeepSeek R1,one-shot-merged,breaks_compatibility,0.429,0.273,0.333,11
+DeepSeek R1,one-shot-merged,solution_incorrect_or_inefficient,0.692,0.243,0.36,37
+DeepSeek R1,one-shot-merged,overengineered_solution,0.0,0.0,0.0,6
+DeepSeek R1,one-shot-merged,clear_alignment_with_issue,0.926,0.971,0.948,272
+DeepSeek R1,one-shot-merged,includes_test_cases,0.856,0.979,0.913,140
+DeepSeek R1,one-shot-merged,high_contributor_acceptance_rate,1.0,1.0,1.0,207
+DeepSeek R1,one-shot-merged,positive_sentiment_in_comments,0.476,0.096,0.16,104
+DeepSeek R1,one-shot-merged,manageable_number_of_changed_lines,0.965,1.0,0.982,277
+DeepSeek R1,one-shot-merged,clear_pr_title,0.873,0.941,0.906,255
+DeepSeek R1,one-shot-merged,clear_pr_description,0.707,0.859,0.776,185
+DeepSeek R1,one-shot-merged,clear_commit_message,0.826,0.674,0.742,233
+DeepSeek R1,one-shot-merged,good_code_quality,0.046,0.385,0.082,13
+DeepSeek R1,one-shot-merged,responsive_to_feedback,0.676,0.683,0.679,104
+DeepSeek R1,one-shot-unmerged,pr_not_aligned_with_issue,0.154,0.091,0.114,22
+DeepSeek R1,one-shot-unmerged,missing_or_inadequate_test_cases,0.626,0.878,0.731,82
+DeepSeek R1,one-shot-unmerged,low_contributor_acceptance_rate,1.0,0.786,0.88,14
+DeepSeek R1,one-shot-unmerged,negative_sentiment_in_comments,0.4,0.375,0.387,16
+DeepSeek R1,one-shot-unmerged,large_number_of_changed_lines,0.875,0.7,0.778,10
+DeepSeek R1,one-shot-unmerged,unclear_or_missing_pr_title,0.222,0.103,0.14,39
+DeepSeek R1,one-shot-unmerged,unclear_or_missing_pr_description,0.723,0.298,0.422,114
+DeepSeek R1,one-shot-unmerged,unclear_or_missing_commit_messages,0.46,0.383,0.418,60
+DeepSeek R1,one-shot-unmerged,poor_code_quality,0.091,0.25,0.133,4
+DeepSeek R1,one-shot-unmerged,unresponsive_after_feedback,0.8,0.364,0.5,11
+DeepSeek R1,one-shot-unmerged,fails_tests,0.0,0.0,0.0,4
+DeepSeek R1,one-shot-unmerged,breaks_compatibility,0.462,0.545,0.5,11
+DeepSeek R1,one-shot-unmerged,solution_incorrect_or_inefficient,0.583,0.368,0.452,38
+DeepSeek R1,one-shot-unmerged,overengineered_solution,0.0,0.0,0.0,6
+DeepSeek R1,one-shot-unmerged,clear_alignment_with_issue,0.915,0.959,0.937,271
+DeepSeek R1,one-shot-unmerged,includes_test_cases,0.904,0.936,0.92,141
+DeepSeek R1,one-shot-unmerged,high_contributor_acceptance_rate,0.986,1.0,0.993,207
+DeepSeek R1,one-shot-unmerged,positive_sentiment_in_comments,0.538,0.544,0.541,103
+DeepSeek R1,one-shot-unmerged,manageable_number_of_changed_lines,0.965,0.986,0.975,277
+DeepSeek R1,one-shot-unmerged,clear_pr_title,0.881,0.868,0.875,257
+DeepSeek R1,one-shot-unmerged,clear_pr_description,0.676,0.826,0.743,184
+DeepSeek R1,one-shot-unmerged,clear_commit_message,0.856,0.735,0.791,234
+DeepSeek R1,one-shot-unmerged,good_code_quality,0.056,0.692,0.103,13
+DeepSeek R1,one-shot-unmerged,responsive_to_feedback,0.689,0.689,0.689,103
+DeepSeek R1,few-shot,pr_not_aligned_with_issue,0.333,0.136,0.194,22
+DeepSeek R1,few-shot,missing_or_inadequate_test_cases,0.663,0.753,0.705,81
+DeepSeek R1,few-shot,low_contributor_acceptance_rate,0.667,0.769,0.714,13
+DeepSeek R1,few-shot,negative_sentiment_in_comments,0.0,0.0,0.0,16
+DeepSeek R1,few-shot,large_number_of_changed_lines,0.636,0.7,0.667,10
+DeepSeek R1,few-shot,unclear_or_missing_pr_title,0.458,0.275,0.344,40
+DeepSeek R1,few-shot,unclear_or_missing_pr_description,0.69,0.175,0.28,114
+DeepSeek R1,few-shot,unclear_or_missing_commit_messages,0.308,0.276,0.291,58
+DeepSeek R1,few-shot,poor_code_quality,0.0,0.0,0.0,4
+DeepSeek R1,few-shot,unresponsive_after_feedback,0.0,0.0,0.0,11
+DeepSeek R1,few-shot,fails_tests,0.0,0.0,0.0,4
+DeepSeek R1,few-shot,breaks_compatibility,0.333,0.182,0.235,11
+DeepSeek R1,few-shot,solution_incorrect_or_inefficient,0.474,0.486,0.48,37
+DeepSeek R1,few-shot,overengineered_solution,0.0,0.0,0.0,6
+DeepSeek R1,few-shot,clear_alignment_with_issue,0.92,0.933,0.926,270
+DeepSeek R1,few-shot,includes_test_cases,0.881,0.943,0.911,141
+DeepSeek R1,few-shot,high_contributor_acceptance_rate,0.952,0.956,0.954,206
+DeepSeek R1,few-shot,positive_sentiment_in_comments,0.537,0.212,0.303,104
+DeepSeek R1,few-shot,manageable_number_of_changed_lines,0.946,0.949,0.948,276
+DeepSeek R1,few-shot,clear_pr_title,0.889,0.851,0.87,255
+DeepSeek R1,few-shot,clear_pr_description,0.654,0.847,0.738,183
+DeepSeek R1,few-shot,clear_commit_message,0.832,0.591,0.692,235
+DeepSeek R1,few-shot,good_code_quality,0.052,0.615,0.096,13
+DeepSeek R1,few-shot,responsive_to_feedback,0.546,0.814,0.654,102
+Mistral 3.2-24B,zero-shot,pr_not_aligned_with_issue,0.179,0.227,0.2,22
+Mistral 3.2-24B,zero-shot,missing_or_inadequate_test_cases,0.6,0.036,0.068,83
+Mistral 3.2-24B,zero-shot,low_contributor_acceptance_rate,0.571,0.857,0.686,14
+Mistral 3.2-24B,zero-shot,negative_sentiment_in_comments,0.25,0.125,0.167,16
+Mistral 3.2-24B,zero-shot,large_number_of_changed_lines,0.154,0.2,0.174,10
+Mistral 3.2-24B,zero-shot,unclear_or_missing_pr_title,0.1,0.025,0.04,40
+Mistral 3.2-24B,zero-shot,unclear_or_missing_pr_description,0.5,0.035,0.065,115
+Mistral 3.2-24B,zero-shot,unclear_or_missing_commit_messages,0.333,0.067,0.111,60
+Mistral 3.2-24B,zero-shot,poor_code_quality,0.0,0.0,0.0,4
+Mistral 3.2-24B,zero-shot,unresponsive_after_feedback,0.25,0.182,0.211,11
+Mistral 3.2-24B,zero-shot,fails_tests,0.167,0.25,0.2,4
+Mistral 3.2-24B,zero-shot,breaks_compatibility,0.333,0.182,0.235,11
+Mistral 3.2-24B,zero-shot,solution_incorrect_or_inefficient,0.556,0.132,0.213,38
+Mistral 3.2-24B,zero-shot,overengineered_solution,0.0,0.0,0.0,6
+Mistral 3.2-24B,zero-shot,clear_alignment_with_issue,0.926,0.919,0.923,273
+Mistral 3.2-24B,zero-shot,includes_test_cases,0.581,0.937,0.717,142
+Mistral 3.2-24B,zero-shot,high_contributor_acceptance_rate,0.793,0.995,0.883,208
+Mistral 3.2-24B,zero-shot,positive_sentiment_in_comments,0.545,0.524,0.534,105
+Mistral 3.2-24B,zero-shot,manageable_number_of_changed_lines,0.956,0.939,0.948,279
+Mistral 3.2-24B,zero-shot,clear_pr_title,0.877,0.911,0.894,258
+Mistral 3.2-24B,zero-shot,clear_pr_description,0.673,0.892,0.767,185
+Mistral 3.2-24B,zero-shot,clear_commit_message,0.813,0.809,0.811,236
+Mistral 3.2-24B,zero-shot,good_code_quality,0.043,0.769,0.081,13
+Mistral 3.2-24B,zero-shot,responsive_to_feedback,0.575,0.74,0.647,104
+Mistral 3.2-24B,one-shot-merged,pr_not_aligned_with_issue,0.189,0.318,0.237,22
+Mistral 3.2-24B,one-shot-merged,missing_or_inadequate_test_cases,0.429,0.036,0.067,83
+Mistral 3.2-24B,one-shot-merged,low_contributor_acceptance_rate,0.241,1.0,0.389,14
+Mistral 3.2-24B,one-shot-merged,negative_sentiment_in_comments,0.312,0.333,0.323,15
+Mistral 3.2-24B,one-shot-merged,large_number_of_changed_lines,0.111,0.2,0.143,10
+Mistral 3.2-24B,one-shot-merged,unclear_or_missing_pr_title,0.2,0.025,0.044,40
+Mistral 3.2-24B,one-shot-merged,unclear_or_missing_pr_description,0.3,0.079,0.125,114
+Mistral 3.2-24B,one-shot-merged,unclear_or_missing_commit_messages,0.167,0.017,0.03,60
+Mistral 3.2-24B,one-shot-merged,poor_code_quality,0.0,0.0,0.0,4
+Mistral 3.2-24B,one-shot-merged,unresponsive_after_feedback,0.125,0.091,0.105,11
+Mistral 3.2-24B,one-shot-merged,fails_tests,0.2,0.25,0.222,4
+Mistral 3.2-24B,one-shot-merged,breaks_compatibility,1.0,0.273,0.429,11
+Mistral 3.2-24B,one-shot-merged,solution_incorrect_or_inefficient,0.375,0.079,0.13,38
+Mistral 3.2-24B,one-shot-merged,overengineered_solution,0.0,0.0,0.0,6
+Mistral 3.2-24B,one-shot-merged,clear_alignment_with_issue,0.94,0.695,0.799,272
+Mistral 3.2-24B,one-shot-merged,includes_test_cases,0.615,0.78,0.688,141
+Mistral 3.2-24B,one-shot-merged,high_contributor_acceptance_rate,0.892,0.802,0.845,207
+Mistral 3.2-24B,one-shot-merged,positive_sentiment_in_comments,0.579,0.21,0.308,105
+Mistral 3.2-24B,one-shot-merged,manageable_number_of_changed_lines,0.938,0.766,0.844,278
+Mistral 3.2-24B,one-shot-merged,clear_pr_title,0.883,0.763,0.818,257
+Mistral 3.2-24B,one-shot-merged,clear_pr_description,0.745,0.427,0.543,185
+Mistral 3.2-24B,one-shot-merged,clear_commit_message,0.814,0.728,0.769,235
+Mistral 3.2-24B,one-shot-merged,good_code_quality,0.037,0.231,0.064,13
+Mistral 3.2-24B,one-shot-merged,responsive_to_feedback,0.667,0.327,0.439,104
+Mistral 3.2-24B,one-shot-unmerged,pr_not_aligned_with_issue,0.088,0.136,0.107,22
+Mistral 3.2-24B,one-shot-unmerged,missing_or_inadequate_test_cases,0.333,0.049,0.085,82
+Mistral 3.2-24B,one-shot-unmerged,low_contributor_acceptance_rate,0.333,0.857,0.48,14
+Mistral 3.2-24B,one-shot-unmerged,negative_sentiment_in_comments,0.25,0.125,0.167,16
+Mistral 3.2-24B,one-shot-unmerged,large_number_of_changed_lines,0.111,0.3,0.162,10
+Mistral 3.2-24B,one-shot-unmerged,unclear_or_missing_pr_title,0.583,0.179,0.275,39
+Mistral 3.2-24B,one-shot-unmerged,unclear_or_missing_pr_description,0.579,0.096,0.165,114
+Mistral 3.2-24B,one-shot-unmerged,unclear_or_missing_commit_messages,0.667,0.033,0.063,60
+Mistral 3.2-24B,one-shot-unmerged,poor_code_quality,0.0,0.0,0.0,4
+Mistral 3.2-24B,one-shot-unmerged,unresponsive_after_feedback,0.083,0.091,0.087,11
+Mistral 3.2-24B,one-shot-unmerged,fails_tests,0.167,0.25,0.2,4
+Mistral 3.2-24B,one-shot-unmerged,breaks_compatibility,0.5,0.182,0.267,11
+Mistral 3.2-24B,one-shot-unmerged,solution_incorrect_or_inefficient,0.333,0.079,0.128,38
+Mistral 3.2-24B,one-shot-unmerged,overengineered_solution,0.0,0.0,0.0,6
+Mistral 3.2-24B,one-shot-unmerged,clear_alignment_with_issue,0.931,0.445,0.602,272
+Mistral 3.2-24B,one-shot-unmerged,includes_test_cases,0.767,0.465,0.579,142
+Mistral 3.2-24B,one-shot-unmerged,high_contributor_acceptance_rate,0.847,0.481,0.613,208
+Mistral 3.2-24B,one-shot-unmerged,positive_sentiment_in_comments,0.514,0.346,0.414,104
+Mistral 3.2-24B,one-shot-unmerged,manageable_number_of_changed_lines,0.955,0.453,0.615,278
+Mistral 3.2-24B,one-shot-unmerged,clear_pr_title,0.898,0.411,0.564,258
+Mistral 3.2-24B,one-shot-unmerged,clear_pr_description,0.733,0.4,0.517,185
+Mistral 3.2-24B,one-shot-unmerged,clear_commit_message,0.833,0.489,0.617,235
+Mistral 3.2-24B,one-shot-unmerged,good_code_quality,0.042,0.308,0.073,13
+Mistral 3.2-24B,one-shot-unmerged,responsive_to_feedback,0.581,0.346,0.434,104
+Mistral 3.2-24B,few-shot,pr_not_aligned_with_issue,0.0,0.0,0.0,22
+Mistral 3.2-24B,few-shot,missing_or_inadequate_test_cases,0.0,0.0,0.0,81
+Mistral 3.2-24B,few-shot,low_contributor_acceptance_rate,0.0,0.0,0.0,13
+Mistral 3.2-24B,few-shot,negative_sentiment_in_comments,0.0,0.0,0.0,16
+Mistral 3.2-24B,few-shot,large_number_of_changed_lines,0.0,0.0,0.0,10
+Mistral 3.2-24B,few-shot,unclear_or_missing_pr_title,0.0,0.0,0.0,40
+Mistral 3.2-24B,few-shot,unclear_or_missing_pr_description,0.0,0.0,0.0,114
+Mistral 3.2-24B,few-shot,unclear_or_missing_commit_messages,0.0,0.0,0.0,58
+Mistral 3.2-24B,few-shot,poor_code_quality,0.0,0.0,0.0,4
+Mistral 3.2-24B,few-shot,unresponsive_after_feedback,0.0,0.0,0.0,11
+Mistral 3.2-24B,few-shot,fails_tests,0.0,0.0,0.0,4
+Mistral 3.2-24B,few-shot,breaks_compatibility,0.0,0.0,0.0,11
+Mistral 3.2-24B,few-shot,solution_incorrect_or_inefficient,1.0,0.027,0.053,37
+Mistral 3.2-24B,few-shot,overengineered_solution,0.0,0.0,0.0,6
+Mistral 3.2-24B,few-shot,clear_alignment_with_issue,1.0,0.015,0.029,270
+Mistral 3.2-24B,few-shot,includes_test_cases,1.0,0.028,0.055,141
+Mistral 3.2-24B,few-shot,high_contributor_acceptance_rate,1.0,0.019,0.038,206
+Mistral 3.2-24B,few-shot,positive_sentiment_in_comments,1.0,0.01,0.019,104
+Mistral 3.2-24B,few-shot,manageable_number_of_changed_lines,1.0,0.018,0.036,276
+Mistral 3.2-24B,few-shot,clear_pr_title,1.0,0.02,0.038,255
+Mistral 3.2-24B,few-shot,clear_pr_description,0.5,0.011,0.021,183
+Mistral 3.2-24B,few-shot,clear_commit_message,1.0,0.026,0.05,235
+Mistral 3.2-24B,few-shot,good_code_quality,0.0,0.0,0.0,13
+Mistral 3.2-24B,few-shot,responsive_to_feedback,0.667,0.02,0.038,102
