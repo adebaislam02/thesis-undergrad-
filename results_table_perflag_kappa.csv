@@ -1,0 +1,25 @@
+flag,polarity,kappa,N_double_annotated,both_positive,A1_only_positive,A2_only_positive,interpretation
+pr_not_aligned_with_issue,red,0.782,61,4,1,1,substantial
+missing_or_inadequate_test_cases,red,0.88,61,16,3,0,almost perfect
+low_contributor_acceptance_rate,red,1.0,61,2,0,0,almost perfect
+negative_sentiment_in_comments,red,1.0,61,5,0,0,almost perfect
+large_number_of_changed_lines,red,1.0,61,4,0,0,almost perfect
+unclear_or_missing_pr_title,red,0.692,61,7,5,0,substantial
+unclear_or_missing_pr_description,red,1.0,61,30,0,0,almost perfect
+unclear_or_missing_commit_messages,red,0.881,61,9,2,0,almost perfect
+poor_code_quality,red,,61,0,0,0,undefined
+unresponsive_after_feedback,red,1.0,61,4,0,0,almost perfect
+fails_tests,red,1.0,61,2,0,0,almost perfect
+breaks_compatibility,red,1.0,61,2,0,0,almost perfect
+solution_incorrect_or_inefficient,red,0.932,61,8,1,0,almost perfect
+overengineered_solution,red,1.0,61,3,0,0,almost perfect
+clear_alignment_with_issue,green,0.742,61,53,1,2,substantial
+includes_test_cases,green,0.967,61,33,0,1,almost perfect
+high_contributor_acceptance_rate,green,1.0,61,42,0,0,almost perfect
+positive_sentiment_in_comments,green,0.958,61,16,0,1,almost perfect
+manageable_number_of_changed_lines,green,1.0,61,57,0,0,almost perfect
+clear_pr_title,green,0.716,61,48,0,5,substantial
+clear_pr_description,green,1.0,61,31,0,0,almost perfect
+clear_commit_message,green,0.946,61,49,0,1,almost perfect
+good_code_quality,green,,61,0,0,0,undefined
+responsive_to_feedback,green,1.0,61,18,0,0,almost perfect

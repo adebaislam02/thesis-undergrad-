@@ -1,0 +1,7 @@
+Model A,Acc A,Model B,Acc B,Δ,A wins,B wins,p-value,Significant (p<0.05)
+GPT-4o-mini,0.738,Claude Haiku 4.5,0.859,-0.121,14,50,0.0,Yes
+GPT-4o-mini,0.738,DeepSeek R1,0.822,-0.084,18,43,0.0019,Yes
+GPT-4o-mini,0.738,Mistral 3.2-24B,0.802,-0.064,23,42,0.0248,Yes
+Claude Haiku 4.5,0.859,DeepSeek R1,0.822,0.037,25,14,0.1081,No
+Claude Haiku 4.5,0.859,Mistral 3.2-24B,0.802,0.057,31,14,0.0161,Yes
+DeepSeek R1,0.822,Mistral 3.2-24B,0.802,0.02,25,19,0.4514,No

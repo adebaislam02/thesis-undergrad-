@@ -69,8 +69,13 @@ for _, r in df.iterrows():
     else:
         model_cell = model_disp
     prev_model = model
+    # Format accuracy with 95% CI: "0.85 [0.81, 0.89]"
+    if pd.notna(r.get("Acc_CI_lo")) and pd.notna(r.get("Acc_CI_hi")):
+        acc_cell = f"{r['Accuracy']:.2f} [{r['Acc_CI_lo']:.2f}, {r['Acc_CI_hi']:.2f}]"
+    else:
+        acc_cell = f"{r['Accuracy']:.2f}"
     row = [
-        model_cell, r["cond_short"], f"{r['Accuracy']:.2f}",
+        model_cell, r["cond_short"], acc_cell,
         f"{r['P(Yes)']:.2f}", f"{r['R(Yes)']:.2f}", f"{r['F1(Yes)']:.2f}",
         f"{r['P(No)']:.2f}",  f"{r['R(No)']:.2f}",  f"{r['F1(No)']:.2f}",
         str(int(r['N'])),
@@ -79,16 +84,19 @@ for _, r in df.iterrows():
 
 tex = r"""\begin{table*}[t]
 \centering
-\caption{Acceptance classification performance. Acc. = Accuracy;
-P = Precision, R = Recall; Yes = merged, No = unmerged.
+\caption{Acceptance classification performance. Acc.\ = Accuracy with
+bootstrap 95\% confidence interval (2000 resamples); P = Precision,
+R = Recall; Yes = merged, No = unmerged.
 0-S = zero-shot, 1S-M = one-shot (merged example), 1S-U = one-shot
 (unmerged example), Few-S = few-shot. The majority baseline always
-predicts \emph{merged}.}
+predicts \emph{merged}. Pairwise statistical comparisons between
+models are reported in Table~\ref{tab:mcnemar}.}
 \label{tab:acceptance}
 \small
+\setlength{\tabcolsep}{4pt}
 \begin{tabular}{llccccccccc}
 \toprule
-Model & Cond. & Acc. & P(Yes) & R(Yes) & F1(Yes) & P(No) & R(No) & F1(No) & N \\
+Model & Cond. & Acc.\ [95\% CI] & P(Yes) & R(Yes) & F1(Yes) & P(No) & R(No) & F1(No) & N \\
 \midrule
 """ + "\n".join(body) + r"""
 \bottomrule

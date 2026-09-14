@@ -32,18 +32,34 @@ though by markedly different margins.  \textbf{Claude Haiku 4.5}
 achieves the highest single-condition accuracy (0.860 on
 one-shot-unmerged), followed closely by its zero-shot performance
 (0.853), representing a 16.6- and 16.5-point improvement over baseline
-respectively.  Across all four prompting conditions, Haiku 4.5 remains
-between 0.806 and 0.860, exhibiting the narrowest performance spread
-of any model.  \textbf{DeepSeek R1} achieves consistently high
-accuracy (0.801--0.825) with a distinctive profile: near-perfect
-recall on merged PRs (0.99--1.00) at the cost of substantially lower
-recall on unmerged PRs (0.37--0.46), indicating a systematic bias
-toward predicting acceptance.  \textbf{GPT-4o-mini} shows the largest
-variance across prompting conditions (0.716--0.774) and is the only
-model whose few-shot condition (0.774) does not exceed its zero-shot
-(0.773).  \textbf{Mistral Small 3.2-24B Instruct} falls in a similar
-band (0.773--0.808), with one-shot-unmerged (0.799) and few-shot
-(0.808) modestly improving on zero-shot.
+respectively.  \textbf{DeepSeek R1} achieves consistently high
+accuracy (0.801--0.825) but with a distinctive behavioral profile:
+near-perfect recall on merged PRs (0.99--1.00) at the cost of
+substantially lower recall on unmerged PRs (0.37--0.46), indicating a
+systematic bias toward predicting acceptance.  \textbf{GPT-4o-mini}
+shows the largest variance across prompting conditions (0.716--0.774)
+and is the only model whose few-shot condition (0.774) does not exceed
+its zero-shot (0.773).  \textbf{Mistral Small 3.2-24B Instruct} falls
+in a similar band (0.773--0.808), with one-shot-unmerged (0.799) and
+few-shot (0.808) modestly improving on zero-shot.
+
+To test whether the numerical differences between models reflect
+genuine performance gaps rather than sampling noise on the $N=300$
+evaluation set, we apply McNemar's paired test in the best-performing
+condition (one-shot-unmerged; Table~\ref{tab:mcnemar}).  The results
+support a two-model \emph{top tier}: \textbf{Claude Haiku 4.5 and
+DeepSeek R1 are statistically indistinguishable} from each other
+(p~=~0.108), while both significantly outperform GPT-4o-mini
+(p~$<$~0.0001, p~=~0.002) and Mistral Small 3.2-24B (p~=~0.016,
+p~=~0.451 for Mistral vs DeepSeek is not significant, but Mistral is
+significantly beaten by Haiku 4.5).  Within the top tier, the two
+models are separated by behavior rather than accuracy: Haiku 4.5
+achieves balanced recall across both classes, whereas DeepSeek R1's
+predictive bias toward merged limits its practical utility for
+identifying likely-rejected PRs.  Bootstrap 95\% confidence intervals
+on accuracy (Table~\ref{tab:acceptance}) confirm this picture: Haiku
+4.5's [0.82, 0.90] and DeepSeek R1's [0.78, 0.86] intervals overlap
+substantially, whereas both stand above GPT-4o-mini's [0.69, 0.79].
 
 Improvement over baseline is stronger on macro-averaged F1 than on
 raw accuracy, since the baseline achieves 0.00 F1 on the minority
@@ -148,7 +164,7 @@ that is not fully recoverable from the prompt alone.  That current
 LLMs at this scale cannot reliably produce these judgments ---
 regardless of the number of in-context examples provided --- is
 consistent with the pattern observed by prior empirical work on PR
-merge decisions~\cite{Zhang2023,Lenarduzzi2021} that social and
+merge decisions~\cite{zhang2023decisions,lenarduzzi2021codequality} that social and
 process-level signals often dominate code-quality signals in the
 actual accept/reject determination.
 

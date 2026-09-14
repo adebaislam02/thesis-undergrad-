@@ -1,0 +1,19 @@
+\begin{table}[!htbp]
+\centering
+\caption{Pairwise McNemar's test on the one-shot-unmerged condition ($N=298$ PRs on which all four models returned valid predictions). ``$A$ wins'' counts PRs where model $A$ was correct but $B$ was not; ``$B$ wins'' vice versa. $p$-values in \textbf{bold} indicate a statistically significant accuracy gap between the two models at $\alpha = 0.05$.}
+\label{tab:mcnemar}
+\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{lclccccl}
+\toprule
+Model $A$ & Acc $A$ & Model $B$ & Acc $B$ & $\Delta$ & $A$ wins & $B$ wins & $p$ \\
+\midrule
+GPT-4o-mini & 0.738 & Claude Haiku 4.5 & 0.859 & -0.121 & 14 & 50 & \textbf{0.0000} \\
+GPT-4o-mini & 0.738 & DeepSeek R1 & 0.822 & -0.084 & 18 & 43 & \textbf{0.0019} \\
+GPT-4o-mini & 0.738 & Mistral 3.2-24B & 0.802 & -0.064 & 23 & 42 & \textbf{0.0248} \\
+Claude Haiku 4.5 & 0.859 & DeepSeek R1 & 0.822 & +0.037 & 25 & 14 & 0.1081 \\
+Claude Haiku 4.5 & 0.859 & Mistral 3.2-24B & 0.802 & +0.057 & 31 & 14 & \textbf{0.0161} \\
+DeepSeek R1 & 0.822 & Mistral 3.2-24B & 0.802 & +0.020 & 25 & 19 & 0.4514 \\
+\bottomrule
+\end{tabular}
+\end{table}

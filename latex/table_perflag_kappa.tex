@@ -1,0 +1,38 @@
+\begin{table*}[!htbp]
+\centering
+\caption{Per-flag Cohen's Kappa between Annotator 1 and Annotator 2 on the double-annotated subset ($N=61$ PRs). \emph{Both~+} counts PRs where both annotators applied the flag; \emph{A1~only} and \emph{A2~only} count PRs where exactly one annotator did. Interpretation follows Landis \& Koch (1977): $\kappa \geq 0.81$ almost perfect, $0.61$--$0.80$ substantial, $0.41$--$0.60$ moderate, $0.21$--$0.40$ fair.}
+\label{tab:perflag-kappa}
+\small
+\setlength{\tabcolsep}{5pt}
+\begin{tabular}{llccccl}
+\toprule
+Flag & Polarity & $\kappa$ & Both+ & A1 only & A2 only & Interpretation \\
+\midrule
+\texttt{pr\_not\_aligned\_with\_issue} & red & 0.782 & 4 & 1 & 1 & substantial \\
+\texttt{missing\_or\_inadequate\_test\_cases} & red & 0.880 & 16 & 3 & 0 & almost perfect \\
+\texttt{low\_contributor\_acceptance\_rate} & red & 1.000 & 2 & 0 & 0 & almost perfect \\
+\texttt{negative\_sentiment\_in\_comments} & red & 1.000 & 5 & 0 & 0 & almost perfect \\
+\texttt{large\_number\_of\_changed\_lines} & red & 1.000 & 4 & 0 & 0 & almost perfect \\
+\texttt{unclear\_or\_missing\_pr\_title} & red & 0.692 & 7 & 5 & 0 & substantial \\
+\texttt{unclear\_or\_missing\_pr\_description} & red & 1.000 & 30 & 0 & 0 & almost perfect \\
+\texttt{unclear\_or\_missing\_commit\_messages} & red & 0.881 & 9 & 2 & 0 & almost perfect \\
+\texttt{poor\_code\_quality} & red & --- & 0 & 0 & 0 & undefined \\
+\texttt{unresponsive\_after\_feedback} & red & 1.000 & 4 & 0 & 0 & almost perfect \\
+\texttt{fails\_tests} & red & 1.000 & 2 & 0 & 0 & almost perfect \\
+\texttt{breaks\_compatibility} & red & 1.000 & 2 & 0 & 0 & almost perfect \\
+\texttt{solution\_incorrect\_or\_inefficient} & red & 0.932 & 8 & 1 & 0 & almost perfect \\
+\texttt{overengineered\_solution} & red & 1.000 & 3 & 0 & 0 & almost perfect \\
+\midrule
+\texttt{clear\_alignment\_with\_issue} & green & 0.742 & 53 & 1 & 2 & substantial \\
+\texttt{includes\_test\_cases} & green & 0.967 & 33 & 0 & 1 & almost perfect \\
+\texttt{high\_contributor\_acceptance\_rate} & green & 1.000 & 42 & 0 & 0 & almost perfect \\
+\texttt{positive\_sentiment\_in\_comments} & green & 0.958 & 16 & 0 & 1 & almost perfect \\
+\texttt{manageable\_number\_of\_changed\_lines} & green & 1.000 & 57 & 0 & 0 & almost perfect \\
+\texttt{clear\_pr\_title} & green & 0.716 & 48 & 0 & 5 & substantial \\
+\texttt{clear\_pr\_description} & green & 1.000 & 31 & 0 & 0 & almost perfect \\
+\texttt{clear\_commit\_message} & green & 0.946 & 49 & 0 & 1 & almost perfect \\
+\texttt{good\_code\_quality} & green & --- & 0 & 0 & 0 & undefined \\
+\texttt{responsive\_to\_feedback} & green & 1.000 & 18 & 0 & 0 & almost perfect \\
+\bottomrule
+\end{tabular}
+\end{table*}

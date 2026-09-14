@@ -38,6 +38,20 @@ from sklearn.metrics import (
     classification_report,
 )
 
+# ============================================================
+# Bootstrap 95% CI on accuracy
+# ============================================================
+def bootstrap_accuracy_ci(y_true, y_pred, n_boot=2000, seed=42):
+    """Bootstrap 95% CI on paired accuracy."""
+    rng = np.random.default_rng(seed)
+    y_true = np.asarray(y_true)
+    y_pred = np.asarray(y_pred)
+    n = len(y_true)
+    idx = rng.integers(0, n, size=(n_boot, n))
+    accs = (y_true[idx] == y_pred[idx]).mean(axis=1)
+    lo, hi = np.percentile(accs, [2.5, 97.5])
+    return float(lo), float(hi)
+
 BASE = "/Users/adeba/thesis-undergrad-"
 GT_PATH = "/Users/adeba/Downloads/FINAL_DATASET_FIXED.csv"
 DS_ZS_TXT = "/Users/adeba/Downloads/eval/deepseek_batch_zero_shot_results_evaluation.txt"
@@ -269,6 +283,10 @@ def compute_metrics(df):
         valid["accepted_true"], valid["accepted_pred"],
         labels=["yes", "no"], output_dict=True, zero_division=0,
     )
+    # Bootstrap 95% CI on accuracy
+    acc_ci_lo, acc_ci_hi = bootstrap_accuracy_ci(
+        valid["accepted_true"].values, valid["accepted_pred"].values
+    )
 
     # Multi-label
     y_true, y_pred = [], []
@@ -302,6 +320,8 @@ def compute_metrics(df):
         "n_valid_pred_rows": int(n_valid),
         "n_excluded": int(n_excluded),
         "acceptance_accuracy": float(acc),
+        "acceptance_accuracy_ci_lo": acc_ci_lo,
+        "acceptance_accuracy_ci_hi": acc_ci_hi,
         "acceptance_p_yes": float(report["yes"]["precision"]),
         "acceptance_r_yes": float(report["yes"]["recall"]),
         "acceptance_f1_yes": float(report["yes"]["f1-score"]),
@@ -461,6 +481,8 @@ def main():
                 "model": model, "condition": cond,
                 "N": m.get("n_valid_pred_rows"), "N_excluded": m.get("n_excluded"),
                 "Accuracy":  round(m["acceptance_accuracy"], 3) if "acceptance_accuracy" in m else None,
+                "Acc_CI_lo": round(m["acceptance_accuracy_ci_lo"], 3) if "acceptance_accuracy_ci_lo" in m else None,
+                "Acc_CI_hi": round(m["acceptance_accuracy_ci_hi"], 3) if "acceptance_accuracy_ci_hi" in m else None,
                 "P(Yes)": round(m.get("acceptance_p_yes", np.nan), 3),
                 "R(Yes)": round(m.get("acceptance_r_yes", np.nan), 3),
                 "F1(Yes)": round(m.get("acceptance_f1_yes", np.nan), 3),
@@ -546,10 +568,17 @@ def main():
         p_no = gt_no / n_gt; r_no = 1.0
         f1_no = 2 * p_no * r_no / (p_no + r_no)
         p_yes = 0.0; r_yes = 0.0; f1_yes = 0.0
+    # Bootstrap CI for baseline
+    y_true_arr = gt["accepted_true"].values
+    y_pred_baseline = np.array([majority_label] * n_gt)
+    bl_lo, bl_hi = bootstrap_accuracy_ci(y_true_arr, y_pred_baseline)
+
     baseline_row = {
         "model": f"Majority baseline (always {majority_label})", "condition": "—",
         "N": n_gt, "N_excluded": 0,
         "Accuracy": round(baseline_acc, 3),
+        "Acc_CI_lo": round(bl_lo, 3),
+        "Acc_CI_hi": round(bl_hi, 3),
         "P(Yes)": round(p_yes, 3), "R(Yes)": round(r_yes, 3), "F1(Yes)": round(f1_yes, 3),
         "P(No)": round(p_no, 3),  "R(No)": round(r_no, 3),   "F1(No)": round(f1_no, 3),
         "Macro-Avg F1": round((f1_yes + f1_no) / 2, 3),
