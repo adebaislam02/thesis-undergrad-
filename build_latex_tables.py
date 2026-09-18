@@ -173,7 +173,7 @@ for _, r in df.iterrows():
     ]
     body.append(" & ".join(escape(x) for x in row) + r" \\")
 
-tex = r"""\begin{table}[t]
+tex = r"""\begin{table}[!htbp]
 \centering
 \caption{Average per-flag F1 within the two flag categories defined in
 Section~\ref{sec:Method}: \emph{extractive} (4 flags with explicit
@@ -270,7 +270,7 @@ for model, fname_slug, label_num in [
         avg_str = f"{avg:.2f}" if pd.notna(avg) else "—"
         body.append(f"{flag_tex} & " + " & ".join(vals) + f" & {avg_str} " + r"\\")
 
-    tex = r"""\begin{table}[t]
+    tex = r"""\begin{table}[!htbp]
 \centering
 \caption{Per-flag F1 for """ + model + r""" across the four prompting
 conditions. Rows are the 24 flags in the taxonomy defined in

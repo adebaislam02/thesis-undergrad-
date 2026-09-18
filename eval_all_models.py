@@ -204,13 +204,18 @@ def to_list_safe(cell):
         return []
 
 def load_predictions(path):
-    """Return DataFrame with columns: index, accepted, red_flags_pred, green_flags_pred, error."""
+    """Return DataFrame with columns: index, accepted, red_flags_pred, green_flags_pred, error.
+
+    Applies empty-placeholder stripping ("None", "N/A", "") to flag lists — some
+    models emit these as placeholders instead of returning an empty list, and they
+    would otherwise be counted as OOV drift.
+    """
     try:
         df = pd.read_csv(os.path.join(BASE, path))
     except Exception:
         df = pd.read_csv(os.path.join(BASE, path), engine="python", on_bad_lines="skip")
-    df["red_flags_pred"] = df["red_flags"].apply(to_list_safe)
-    df["green_flags_pred"] = df["green_flags"].apply(to_list_safe)
+    df["red_flags_pred"] = df["red_flags"].apply(to_list_safe).apply(strip_empty_placeholders)
+    df["green_flags_pred"] = df["green_flags"].apply(to_list_safe).apply(strip_empty_placeholders)
     df["index"] = pd.to_numeric(df["index"], errors="coerce").astype("Int64")
     df = df[df["index"].notna()].copy()
     df["index"] = df["index"].astype(int)
@@ -220,13 +225,43 @@ def load_predictions(path):
 # Normalization for Mistral (conservative — case + spaces only + known variants)
 # ============================================================
 _KNOWN_VARIANTS = {
-    "clear_commit_messages": "clear_commit_message",         # plural fix
+    # Plural / prefix variants
+    "clear_commit_messages": "clear_commit_message",
     "unclear_pr_description": "unclear_or_missing_pr_description",
     "unclear_pr_title": "unclear_or_missing_pr_title",
     "unclear_commit_messages": "unclear_or_missing_commit_messages",
     "unclear_commit_message": "unclear_or_missing_commit_messages",
+    # Ground-truth naming bug (annotators wrote 'is')
     "solution_is_incorrect_or_inefficient": "solution_incorrect_or_inefficient",
+    # Prompt-echo variant: the one-shot/few-shot flag-definitions section lists
+    # `pr_aligned_with_issue` (not in vocab). Some models echo this name when
+    # they mean the positive-alignment flag `clear_alignment_with_issue`.
+    "pr_aligned_with_issue": "clear_alignment_with_issue",
+    # Common typos empirically observed in model output
+    "managable_number_of_changed_lines": "manageable_number_of_changed_lines",   # missing 'e'
+    "managerable_number_of_changed_lines": "manageable_number_of_changed_lines", # extra 'r'
+    "respnsive_to_feedback": "responsive_to_feedback",                            # missing 'o'
+    "unresponsive_to_feedback": "unresponsive_after_feedback",                    # wrong preposition
+    "include_test_cases": "includes_test_cases",                                  # missing 's'
+    "included_test_cases": "includes_test_cases",                                 # past tense
 }
+
+
+# ============================================================
+# Empty-placeholder handling
+# ============================================================
+# Some models emit "None", "N/A", or empty strings inside their flag list
+# when they mean "no flags apply". Strip these before scoring so they don't
+# get penalized as unrecognized drift.
+_EMPTY_PLACEHOLDERS = {"none", "n/a", "null", "", "(none)"}
+
+
+def strip_empty_placeholders(flag_list):
+    """Remove placeholder-for-empty strings from a flag list."""
+    if not isinstance(flag_list, list):
+        return []
+    return [f for f in flag_list
+            if isinstance(f, str) and f.strip().lower() not in _EMPTY_PLACEHOLDERS]
 
 def normalize_flag(s):
     """Conservative normalization: lowercase, spaces→underscores, known-variant lookup.

@@ -13,13 +13,13 @@ fails_tests,0.2,0.222,0.118,0.0,0.135
 breaks_compatibility,0.235,0.375,0.25,0.125,0.246
 solution_incorrect_or_inefficient,0.213,0.118,0.31,0.381,0.256
 overengineered_solution,0.0,0.0,0.0,0.0,0.0
-clear_alignment_with_issue,0.923,0.888,0.911,0.942,0.916
-includes_test_cases,0.717,0.739,0.773,0.796,0.756
+clear_alignment_with_issue,0.923,0.892,0.918,0.942,0.919
+includes_test_cases,0.717,0.741,0.773,0.796,0.757
 high_contributor_acceptance_rate,0.883,0.938,0.899,0.876,0.899
 positive_sentiment_in_comments,0.534,0.316,0.548,0.444,0.46
-manageable_number_of_changed_lines,0.948,0.932,0.897,0.938,0.929
+manageable_number_of_changed_lines,0.949,0.932,0.899,0.945,0.931
 clear_pr_title,0.894,0.89,0.765,0.805,0.838
 clear_pr_description,0.767,0.591,0.678,0.702,0.684
 clear_commit_message,0.812,0.839,0.848,0.737,0.809
 good_code_quality,0.081,0.075,0.066,0.058,0.07
-responsive_to_feedback,0.647,0.47,0.607,0.716,0.61
+responsive_to_feedback,0.644,0.47,0.607,0.716,0.609

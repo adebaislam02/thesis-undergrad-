@@ -2,8 +2,8 @@ model,condition,N,rows_with_non_vocab_flag,pct_rows_with_non_vocab_flag,total_no
 GPT-4o-mini,zero-shot,300,0,0.0,0,0.415,0.415,0.0
 GPT-4o-mini,one-shot-merged,299,9,3.0,61,0.376,0.38,0.004
 GPT-4o-mini,one-shot-unmerged,299,150,50.2,1108,0.263,0.383,0.12
-GPT-4o-mini,few-shot,297,296,99.7,2299,0.003,0.409,0.406
-Claude Haiku 4.5,zero-shot,300,1,0.3,1,0.452,0.452,0.0
+GPT-4o-mini,few-shot,297,296,99.7,2296,0.003,0.409,0.406
+Claude Haiku 4.5,zero-shot,300,1,0.3,1,0.452,0.452,-0.0
 Claude Haiku 4.5,one-shot-merged,299,0,0.0,0,0.418,0.418,0.0
 Claude Haiku 4.5,one-shot-unmerged,299,1,0.3,1,0.449,0.449,0.0
 Claude Haiku 4.5,few-shot,297,0,0.0,0,0.454,0.454,0.0
@@ -13,5 +13,5 @@ DeepSeek R1,one-shot-unmerged,298,3,1.0,3,0.543,0.543,0.0
 DeepSeek R1,few-shot,297,18,6.1,106,0.458,0.464,0.006
 Mistral 3.2-24B,zero-shot,300,9,3.0,11,0.399,0.401,0.002
 Mistral 3.2-24B,one-shot-merged,299,66,22.1,380,0.348,0.377,0.029
-Mistral 3.2-24B,one-shot-unmerged,299,148,49.5,1049,0.301,0.419,0.119
-Mistral 3.2-24B,few-shot,297,293,98.7,2110,0.016,0.402,0.387
+Mistral 3.2-24B,one-shot-unmerged,299,148,49.5,1049,0.301,0.42,0.119
+Mistral 3.2-24B,few-shot,297,292,98.3,2107,0.016,0.403,0.387
